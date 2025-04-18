@@ -796,6 +796,43 @@ namespace GabIA.WPF
             }
         }
 
+        private void ConfiguracoesBancoDados_Click(object sender, RoutedEventArgs e)
+        {
+            // Abrir a janela de configurações do banco de dados
+            var dbSetupWindow = new DatabaseSetupWindow();
+            dbSetupWindow.Owner = this; // Define a janela principal como proprietária
+
+            // Mostrar a janela de configurações como diálogo modal
+            dbSetupWindow.ShowDialog();
+        }
+
+        private void ProcessarPDF_Click(object sender, RoutedEventArgs e)
+        {
+            // Abrir a janela de processamento de PDF
+            var pdfProcessingWindow = new PDFProcessingWindow();
+            pdfProcessingWindow.Owner = this; // Define a janela principal como proprietária
+
+            // Mostrar a janela de processamento como diálogo modal
+            bool? result = pdfProcessingWindow.ShowDialog();
+
+            if (result == true)
+            {
+                // Obter os arquivos selecionados
+                var selectedFiles = pdfProcessingWindow.SelectedFiles;
+
+                if (selectedFiles.Count > 0)
+                {
+                    // Exibir mensagem com os arquivos selecionados (temporário para teste)
+                    MessageBox.Show($"Arquivos selecionados para processamento: {selectedFiles.Count}\n\n" +
+                                  $"{string.Join("\n", selectedFiles)}",
+                                  "Processamento de PDF", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    // TODO: Implementar o processamento real dos arquivos PDF
+                    // ProcessarArquivosPDF(selectedFiles);
+                }
+            }
+        }
+
         private ObservableCollection<ProcessoViewModel> PreencheDataGridTeste(int numeroDeLinhas)
         {
             var processos = new ObservableCollection<ProcessoViewModel>();

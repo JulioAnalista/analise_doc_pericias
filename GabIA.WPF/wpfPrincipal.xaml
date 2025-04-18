@@ -28,7 +28,7 @@
                         <MenuItem Header="Atualizar Base Local" Height="35" Click="Atualizar_Base_click"/>
                         <MenuItem Header="Baixar PDF" Height="35"/>
                         <MenuItem Header="Preprocessar" Height="35"/>
-                        <MenuItem Header="Processar Todos" Height="35" Click="Testar_Conexao_Click"/>
+                        <MenuItem Header="Processar" Height="35" Click="ProcessarPDF_Click"/>
                     </MenuItem>
                     <MenuItem Header="Assistente" Height="35">
                         <MenuItem Header="Somente Limpeza" Height="35"/>
@@ -59,6 +59,7 @@
                 </MenuItem>
                 <MenuItem Header="Configurações" FontSize="15" FontFamily="Lucida Sans Typewriter">
                     <MenuItem Header="Configurações do Ambiente" Height="35" Click="ConfiguracoesAmbiente_Click"/>
+                    <MenuItem Header="Configurações do Banco de Dados" Height="35" Click="ConfiguracoesBancoDados_Click"/>
                     <Separator/>
                     <MenuItem Header="Temas" Height="35"/>
                     <MenuItem Header="Deep Dark" Click="ChangeTheme" Uid="0" Height="35">
