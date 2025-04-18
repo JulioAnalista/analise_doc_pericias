@@ -8,6 +8,7 @@ namespace FramePFX.Themes {
         GreyTheme,
         DarkGreyTheme,
         LightTheme,
+        HighContrast,
     }
 
     public static class ThemeTypeExtension {
@@ -18,7 +19,8 @@ namespace FramePFX.Themes {
                 case ThemeType.DeepDark:        return "DeepDark";
                 case ThemeType.GreyTheme:       return "GreyTheme";
                 case ThemeType.DarkGreyTheme:   return "DarkGreyTheme";
-                case ThemeType.LightTheme:   return "LightTheme";
+                case ThemeType.LightTheme:      return "LightTheme";
+                case ThemeType.HighContrast:    return "HighContrast";
                 default: throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
         }

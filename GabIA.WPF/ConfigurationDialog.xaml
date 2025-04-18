@@ -1,0 +1,132 @@
+<Window x:Class="GabIA.WPF.ConfigurationDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GabIA.WPF"
+        mc:Ignorable="d"
+        Title="Configurações do Sistema" Height="500" Width="600"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="{DynamicResource ABrush.Tone3.Background.Static}"
+        Foreground="{DynamicResource ABrush.Foreground.Static}">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Cabeçalho -->
+        <TextBlock Grid.Row="0" Text="Configurações do Sistema" FontSize="20" FontWeight="Bold" Margin="0,0,0,20" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
+
+        <!-- Conteúdo principal -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- Diretório Padrão -->
+                <GroupBox Header="Diretórios" Margin="0,0,0,15" Padding="10" Background="{DynamicResource ABrush.Tone4.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone4.Border.Static}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Diretório Padrão:" VerticalAlignment="Center" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtDefaultDirectory" Margin="5,5,5,5" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+                        <Button Grid.Row="0" Grid.Column="2" Content="..." Width="30" Click="BrowseDefaultDirectory_Click" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+                    </Grid>
+                </GroupBox>
+
+                <!-- Modelos de IA -->
+                <GroupBox Header="Modelos de IA" Margin="0,0,0,15" Padding="10" Background="{DynamicResource ABrush.Tone4.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone4.Border.Static}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Modelo de Linguagem:" VerticalAlignment="Center" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
+                        <ComboBox Grid.Row="0" Grid.Column="1" x:Name="cmbLanguageModel" Margin="5,5,5,5" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}">
+                            <ComboBoxItem Content="gpt-4"/>
+                            <ComboBoxItem Content="gpt-4-turbo"/>
+                            <ComboBoxItem Content="gpt-3.5-turbo"/>
+                            <ComboBoxItem Content="claude-3-opus"/>
+                            <ComboBoxItem Content="claude-3-sonnet"/>
+                            <ComboBoxItem Content="claude-3-haiku"/>
+                        </ComboBox>
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Modelo de Embeddings:" VerticalAlignment="Center" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
+                        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="cmbEmbeddingsModel" Margin="5,5,5,5" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}">
+                            <ComboBoxItem Content="text-embedding-ada-002"/>
+                            <ComboBoxItem Content="text-embedding-3-small"/>
+                            <ComboBoxItem Content="text-embedding-3-large"/>
+                        </ComboBox>
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="API Key:" VerticalAlignment="Center" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
+                        <PasswordBox Grid.Row="2" Grid.Column="1" x:Name="txtApiKey" Margin="5,5,5,5" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+                    </Grid>
+                </GroupBox>
+
+                <!-- Configurações de OCR -->
+                <GroupBox Header="Configurações de OCR" Margin="0,0,0,15" Padding="10" Background="{DynamicResource ABrush.Tone4.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone4.Border.Static}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Caminho Tesseract:" VerticalAlignment="Center" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtTesseractPath" Margin="5,5,5,5" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+                        <Button Grid.Row="0" Grid.Column="2" Content="..." Width="30" Click="BrowseTesseractPath_Click" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="DPI Baixa Resolução:" VerticalAlignment="Center" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
+                        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtLowDpi" Margin="5,5,5,5" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="DPI Alta Resolução:" VerticalAlignment="Center" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
+                        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtHighDpi" Margin="5,5,5,5" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+                    </Grid>
+                </GroupBox>
+
+                <!-- Configurações do Python -->
+                <GroupBox Header="Configurações do Python" Margin="0,0,0,15" Padding="10" Background="{DynamicResource ABrush.Tone4.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone4.Border.Static}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Caminho Python:" VerticalAlignment="Center" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtPythonPath" Margin="5,5,5,5" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+                        <Button Grid.Row="0" Grid.Column="2" Content="..." Width="30" Click="BrowsePythonPath_Click" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+                    </Grid>
+                </GroupBox>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Botões de ação -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="Salvar" Width="100" Height="30" Click="SaveButton_Click" Margin="0,0,10,0" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+            <Button Content="Cancelar" Width="100" Height="30" Click="CancelButton_Click" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}"/>
+        </StackPanel>
+    </Grid>
+</Window>

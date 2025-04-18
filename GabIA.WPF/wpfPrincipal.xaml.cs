@@ -83,6 +83,7 @@ namespace GabIA.WPF
                 case "3": ThemesController.SetTheme(ThemeType.GreyTheme); break;
                 case "4": ThemesController.SetTheme(ThemeType.LightTheme); break;
                 case "5": ThemesController.SetTheme(ThemeType.RedBlackTheme); break;
+                case "6": ThemesController.SetTheme(ThemeType.HighContrast); break;
             }
 
             e.Handled = true;
@@ -773,6 +774,26 @@ namespace GabIA.WPF
             // Navegar para uma página de análise (exemplo)
             nowDisplay("WebViewMP");
             webViewMP.CoreWebView2.Navigate("https://intranet.mpdft.mp.br/sistemas/java/neogab/acompanhamento/pericia");
+        }
+
+        private void ConfiguracoesAmbiente_Click(object sender, RoutedEventArgs e)
+        {
+            // Abrir a janela de configurações
+            var configDialog = new ConfigurationDialog();
+            configDialog.Owner = this; // Define a janela principal como proprietária
+
+            // Mostrar a janela de configurações como diálogo modal
+            bool? result = configDialog.ShowDialog();
+
+            // Se o usuário clicou em Salvar (DialogResult = true)
+            if (result == true)
+            {
+                // Aplicar as configurações atualizadas (se necessário)
+                // Por exemplo, atualizar caminhos de diretórios, modelos, etc.
+
+                // Exibir mensagem de confirmação (opcional)
+                MessageBox.Show("As configurações foram aplicadas com sucesso.", "Configurações", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
         private ObservableCollection<ProcessoViewModel> PreencheDataGridTeste(int numeroDeLinhas)
