@@ -1,0 +1,1066 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\wpfprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:wpfprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\wpfprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:wpfprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{428642B4-E772-4CCD-B2E2-C1EBADCAD61A}|..\\GabIA.BLL\\GabIA.BLL\\GabIA.BLL.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.bll\\gabia.bll\\operacoesbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{428642B4-E772-4CCD-B2E2-C1EBADCAD61A}|..\\GabIA.BLL\\GabIA.BLL\\GabIA.BLL.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.bll\\gabia.bll\\processobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34FF666-03AF-4777-B4E1-B597001A1546}|..\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.ent\\gabia.ent\\processojudicialent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34FF666-03AF-4777-B4E1-B597001A1546}|..\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.ent\\gabia.ent\\processocompletoent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E344665-FEF7-48E1-9D64-2643958B62B7}|..\\GabIA.DAL\\GabIA.DAL\\GabIA.DAL.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.dal\\gabia.dal\\processojudicialdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\views\\processosview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:views\\processosview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\organizapecas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:organizapecas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\iocconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:iocconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\preprocessamentotextoia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:preprocessamentotextoia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\views\\neogabview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:views\\neogabview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\processamentodetexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:processamentodetexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\viewmodels\\blueviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:viewmodels\\blueviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\views\\processosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:views\\processosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\themes\\attached\\cornerradiushelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:themes\\attached\\cornerradiushelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julio\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\monitoraexcecucaoassincrona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:monitoraexcecucaoassincrona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\ia_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:ia_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\dockstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:dockstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\adobepdfextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:adobepdfextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\aboutwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:aboutwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\views\\webviewtemplateselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:views\\webviewtemplateselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\views\\webviewcontrol3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:views\\webviewcontrol3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\views\\dockstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:views\\dockstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\viewmodels\\processosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:viewmodels\\processosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\viewmodels\\neogabmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:viewmodels\\neogabmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\viewmodels\\datagrids\\editorgridviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:viewmodels\\datagrids\\editorgridviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\utilities\\commandparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:utilities\\commandparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\utilities\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:utilities\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\themes\\colourdictionaries\\softdark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:themes\\colourdictionaries\\softdark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\themes\\colourdictionaries\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:themes\\colourdictionaries\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\themes\\controls.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:themes\\controls.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julio\\AppData\\Local\\Temp\\.vsdbgsrc\\009dddee05c62d2ef4bfba478b8c221039d43e8c4ad6b34e52a4ae3dfdce9e24\\DefaultBinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\pdftopngconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:pdftopngconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|d:\\usu\u00E1rios\\gabinete\\gabia.wpf\\pythonapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1914BBAC-A8C1-4A07-950B-A54965423C73}|GabIA.WPF.csproj|solutionrelative:pythonapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoCompletoBLL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ElementosDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\CausaDePedirDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PedidoDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoJudicialDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PartesDoProcessoDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ElementosBLL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\PartesdoProcessoBLL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ElementosENT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\OperacoesBLL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoJudicialENT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoBLL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PartesDoProcessoENT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoCompletoENT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\AtoProcessualDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\CausadePedirENT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\CausadePedirBLL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PedidoENT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\JuizesENT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PessoaENT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\MembrosMpENT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProcessoBLL.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoBLL.cs",
+              "RelativeDocumentMoniker": "..\\GabIA.BLL\\GabIA.BLL\\ProcessoBLL.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoBLL.cs",
+              "RelativeToolTip": "..\\GabIA.BLL\\GabIA.BLL\\ProcessoBLL.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAIA4wDgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-26T13:56:08.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OperacoesBLL.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.BLL\\GabIA.BLL\\OperacoesBLL.cs",
+              "RelativeDocumentMoniker": "..\\GabIA.BLL\\GabIA.BLL\\OperacoesBLL.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.BLL\\GabIA.BLL\\OperacoesBLL.cs",
+              "RelativeToolTip": "..\\GabIA.BLL\\GabIA.BLL\\OperacoesBLL.cs",
+              "ViewState": "AQIAAPABAAAAAAAAAAAMwBsCAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-26T13:54:33.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProcessoJudicialDAL.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoJudicialDAL.cs",
+              "RelativeDocumentMoniker": "..\\GabIA.DAL\\GabIA.DAL\\ProcessoJudicialDAL.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoJudicialDAL.cs",
+              "RelativeToolTip": "..\\GabIA.DAL\\GabIA.DAL\\ProcessoJudicialDAL.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAEwGAAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-26T13:54:22.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProcessoJudicialENT.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoJudicialENT.cs",
+              "RelativeDocumentMoniker": "..\\GabIA.ENT\\GabIA.ENT\\ProcessoJudicialENT.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoJudicialENT.cs",
+              "RelativeToolTip": "..\\GabIA.ENT\\GabIA.ENT\\ProcessoJudicialENT.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAA8wC0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-26T13:21:00.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "wpfPrincipal.xaml.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\wpfPrincipal.xaml.cs",
+              "RelativeDocumentMoniker": "wpfPrincipal.xaml.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\wpfPrincipal.xaml.cs",
+              "RelativeToolTip": "wpfPrincipal.xaml.cs",
+              "ViewState": "AQIAAKICAAAAAAAAAMBGwKwCAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T15:40:33.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ProcessoCompletoBLL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoCompletoBLL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoCompletoBLL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoCompletoBLL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoCompletoBLL.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAswFIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T17:51:50.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ElementosDAL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ElementosDAL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ElementosDAL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ElementosDAL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ElementosDAL.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAswGUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T19:26:16.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CausaDePedirDAL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\CausaDePedirDAL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\CausaDePedirDAL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\CausaDePedirDAL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\CausaDePedirDAL.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAIAwwDEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T13:54:15.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "wpfPrincipal.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\wpfPrincipal.xaml",
+              "RelativeDocumentMoniker": "wpfPrincipal.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\wpfPrincipal.xaml",
+              "RelativeToolTip": "wpfPrincipal.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T15:31:23.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProcessoCompletoENT.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoCompletoENT.cs",
+              "RelativeDocumentMoniker": "..\\GabIA.ENT\\GabIA.ENT\\ProcessoCompletoENT.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoCompletoENT.cs",
+              "RelativeToolTip": "..\\GabIA.ENT\\GabIA.ENT\\ProcessoCompletoENT.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-26T13:57:00.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PedidoDAL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PedidoDAL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PedidoDAL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PedidoDAL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PedidoDAL.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAIAwwDIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T14:06:27.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ProcessoJudicialDAL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoJudicialDAL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoJudicialDAL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoJudicialDAL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoJudicialDAL.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAIAwwDEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T13:46:15.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "PartesDoProcessoDAL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PartesDoProcessoDAL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PartesDoProcessoDAL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PartesDoProcessoDAL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\PartesDoProcessoDAL.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAswDoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T19:27:44.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ProcessoDAL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoDAL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoDAL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoDAL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\ProcessoDAL.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAswGQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T15:27:58.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ElementosBLL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ElementosBLL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ElementosBLL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ElementosBLL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ElementosBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T20:21:04.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "PartesdoProcessoBLL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\PartesdoProcessoBLL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\PartesdoProcessoBLL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\PartesdoProcessoBLL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\PartesdoProcessoBLL.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA1wBMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T19:00:48.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ElementosENT.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ElementosENT.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ElementosENT.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ElementosENT.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ElementosENT.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T16:20:44.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "OperacoesBLL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\OperacoesBLL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\OperacoesBLL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\OperacoesBLL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\OperacoesBLL.cs",
+              "ViewState": "AQIAANcAAAAAAAAAAAAQwN8AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T19:28:36.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ProcessoJudicialENT.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoJudicialENT.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoJudicialENT.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoJudicialENT.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoJudicialENT.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwA4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T19:25:56.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProcessosView.xaml.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\ProcessosView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ProcessosView.xaml.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\ProcessosView.xaml.cs",
+              "RelativeToolTip": "Views\\ProcessosView.xaml.cs",
+              "ViewState": "AQIAAKoBAAAAAAAAAAAQwK4BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T18:22:17.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ProcessoBLL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoBLL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoBLL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoBLL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\ProcessoBLL.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwB0AAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T13:24:17.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrganizaPecas.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\OrganizaPecas.cs",
+              "RelativeDocumentMoniker": "OrganizaPecas.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\OrganizaPecas.cs",
+              "RelativeToolTip": "OrganizaPecas.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAcwB0AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T13:51:19.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "PartesDoProcessoENT.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PartesDoProcessoENT.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PartesDoProcessoENT.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PartesDoProcessoENT.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PartesDoProcessoENT.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T19:28:03.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ProcessoCompletoENT.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoCompletoENT.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoCompletoENT.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoCompletoENT.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\ProcessoCompletoENT.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA1wCEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T16:40:24.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T16:28:59.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IoCConfig.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\IoCConfig.cs",
+              "RelativeDocumentMoniker": "IoCConfig.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\IoCConfig.cs",
+              "RelativeToolTip": "IoCConfig.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAzwCAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T19:24:23.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAA5wKMKAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T13:51:19.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAzwFsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T13:51:19.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainViewModel.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainViewModel.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAA1wFIAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T16:48:54.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "AtoProcessualDAL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\AtoProcessualDAL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\AtoProcessualDAL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\AtoProcessualDAL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\AtoProcessualDAL.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAMBSwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T14:22:08.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CausadePedirENT.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\CausadePedirENT.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\CausadePedirENT.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\CausadePedirENT.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\CausadePedirENT.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwAkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T16:54:34.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "CausadePedirBLL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\CausadePedirBLL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\CausadePedirBLL.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\CausadePedirBLL.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\CausadePedirBLL.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAABFwBAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-25T13:58:08.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "PedidoENT.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PedidoENT.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PedidoENT.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PedidoENT.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PedidoENT.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T16:54:47.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "JuizesENT.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\JuizesENT.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\JuizesENT.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\JuizesENT.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\JuizesENT.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAMBiwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T17:19:01.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "PessoaENT.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PessoaENT.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PessoaENT.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PessoaENT.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\PessoaENT.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAA4wCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T16:20:28.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "MembrosMpENT.cs",
+              "DocumentMoniker": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\MembrosMpENT.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\MembrosMpENT.cs",
+              "ToolTip": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\MembrosMpENT.cs",
+              "RelativeToolTip": "..\\..\\..\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\MembrosMpENT.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAcwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T17:19:49.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PreprocessamentoTextoIA.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\PreprocessamentoTextoIA.cs",
+              "RelativeDocumentMoniker": "PreprocessamentoTextoIA.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\PreprocessamentoTextoIA.cs",
+              "RelativeToolTip": "PreprocessamentoTextoIA.cs",
+              "ViewState": "AQIAAPsBAAAAAAAAAAAWwAcCAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T12:41:10.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProcessamentoDeTexto.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ProcessamentoDeTexto.cs",
+              "RelativeDocumentMoniker": "ProcessamentoDeTexto.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ProcessamentoDeTexto.cs",
+              "RelativeToolTip": "ProcessamentoDeTexto.cs",
+              "ViewState": "AQIAAIsEAAAAAAAAAAAawJYEAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-24T12:41:10.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2023-12-23T19:23:24.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AdobePDFExtractor.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\AdobePDFExtractor.cs",
+              "RelativeDocumentMoniker": "AdobePDFExtractor.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\AdobePDFExtractor.cs",
+              "RelativeToolTip": "AdobePDFExtractor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T19:23:15.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WebViewTemplateSelector.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\WebViewTemplateSelector.cs",
+              "RelativeDocumentMoniker": "Views\\WebViewTemplateSelector.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\WebViewTemplateSelector.cs",
+              "RelativeToolTip": "Views\\WebViewTemplateSelector.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T19:23:05.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "WebViewControl3.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\WebViewControl3.xaml",
+              "RelativeDocumentMoniker": "Views\\WebViewControl3.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\WebViewControl3.xaml",
+              "RelativeToolTip": "Views\\WebViewControl3.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T19:23:01.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DockStyle.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\DockStyle.xaml",
+              "RelativeDocumentMoniker": "Views\\DockStyle.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\DockStyle.xaml",
+              "RelativeToolTip": "Views\\DockStyle.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T19:22:43.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DockStyle.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\DockStyle.xaml",
+              "RelativeDocumentMoniker": "DockStyle.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\DockStyle.xaml",
+              "RelativeToolTip": "DockStyle.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T19:24:16.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProcessosView.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\ProcessosView.xaml",
+              "RelativeDocumentMoniker": "Views\\ProcessosView.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\ProcessosView.xaml",
+              "RelativeToolTip": "Views\\ProcessosView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-24T12:15:39.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ProcessosModel.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\ProcessosModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ProcessosModel.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\ProcessosModel.cs",
+              "RelativeToolTip": "ViewModels\\ProcessosModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T19:22:17.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\julio\\AppData\\Local\\Temp\\.vsdbgsrc\\83616927926d14a9d63ba91b611a12293ac61079cc74be5d9c8aaec5dc9ed161\\XamlReader.cs",
+              "ViewState": "AQIAAIUBAAAAAAAAAIA0wJABAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T19:33:11.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "NeoGabModel.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\NeoGabModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\NeoGabModel.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\NeoGabModel.cs",
+              "RelativeToolTip": "ViewModels\\NeoGabModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T19:22:12.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BlueViewModel.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\BlueViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\BlueViewModel.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\BlueViewModel.cs",
+              "RelativeToolTip": "ViewModels\\BlueViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T19:22:07.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EditorGridViewModel.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\DataGrids\\EditorGridViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DataGrids\\EditorGridViewModel.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\ViewModels\\DataGrids\\EditorGridViewModel.cs",
+              "RelativeToolTip": "ViewModels\\DataGrids\\EditorGridViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T19:21:55.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SoftDark.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Themes\\ColourDictionaries\\SoftDark.xaml",
+              "RelativeDocumentMoniker": "Themes\\ColourDictionaries\\SoftDark.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Themes\\ColourDictionaries\\SoftDark.xaml",
+              "RelativeToolTip": "Themes\\ColourDictionaries\\SoftDark.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T19:20:58.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "LightTheme.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Themes\\ColourDictionaries\\LightTheme.xaml",
+              "RelativeDocumentMoniker": "Themes\\ColourDictionaries\\LightTheme.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Themes\\ColourDictionaries\\LightTheme.xaml",
+              "RelativeToolTip": "Themes\\ColourDictionaries\\LightTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T19:20:48.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Controls.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Themes\\Controls.xaml",
+              "RelativeDocumentMoniker": "Themes\\Controls.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Themes\\Controls.xaml",
+              "RelativeToolTip": "Themes\\Controls.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T18:44:26.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CornerRadiusHelper.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Themes\\Attached\\CornerRadiusHelper.cs",
+              "RelativeDocumentMoniker": "Themes\\Attached\\CornerRadiusHelper.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Themes\\Attached\\CornerRadiusHelper.cs",
+              "RelativeToolTip": "Themes\\Attached\\CornerRadiusHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T18:44:11.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2023-12-23T18:42:58.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DataManager.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\DataManager.cs",
+              "RelativeDocumentMoniker": "DataManager.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\DataManager.cs",
+              "RelativeToolTip": "DataManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T18:22:17.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MonitoraExcecucaoAssincrona.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\MonitoraExcecucaoAssincrona.cs",
+              "RelativeDocumentMoniker": "MonitoraExcecucaoAssincrona.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\MonitoraExcecucaoAssincrona.cs",
+              "RelativeToolTip": "MonitoraExcecucaoAssincrona.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T18:22:17.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DefaultBinder.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\AppData\\Local\\Temp\\.vsdbgsrc\\009dddee05c62d2ef4bfba478b8c221039d43e8c4ad6b34e52a4ae3dfdce9e24\\DefaultBinder.cs",
+              "ToolTip": "C:\\Users\\julio\\AppData\\Local\\Temp\\.vsdbgsrc\\009dddee05c62d2ef4bfba478b8c221039d43e8c4ad6b34e52a4ae3dfdce9e24\\DefaultBinder.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAMBiwFEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T18:22:32.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CommandParam.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Utilities\\CommandParam.cs",
+              "RelativeDocumentMoniker": "Utilities\\CommandParam.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Utilities\\CommandParam.cs",
+              "RelativeToolTip": "Utilities\\CommandParam.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T18:14:59.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Utilities\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "Utilities\\BaseViewModel.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Utilities\\BaseViewModel.cs",
+              "RelativeToolTip": "Utilities\\BaseViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T18:10:20.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AboutWindow.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\AboutWindow.xaml",
+              "RelativeDocumentMoniker": "AboutWindow.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\AboutWindow.xaml",
+              "RelativeToolTip": "AboutWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T13:51:19.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IA_Operations.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\IA_Operations.cs",
+              "RelativeDocumentMoniker": "IA_Operations.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\IA_Operations.cs",
+              "RelativeToolTip": "IA_Operations.cs",
+              "ViewState": "AQIAAPwAAAAAAAAAAAAcwAgBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T13:51:19.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NeoGabView.xaml.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\NeoGabView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\NeoGabView.xaml.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\Views\\NeoGabView.xaml.cs",
+              "RelativeToolTip": "Views\\NeoGabView.xaml.cs",
+              "ViewState": "AQIAADEEAAAAAAAAAAAEwDsEAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T13:51:19.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-23T13:51:19.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PythonApiService.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\PythonApiService.cs",
+              "RelativeDocumentMoniker": "PythonApiService.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\PythonApiService.cs",
+              "RelativeToolTip": "PythonApiService.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAswCUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T13:51:19.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "PDFToPNGConverter.cs",
+              "DocumentMoniker": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\PDFToPNGConverter.cs",
+              "RelativeDocumentMoniker": "PDFToPNGConverter.cs",
+              "ToolTip": "D:\\Usu\u00E1rios\\gabinete\\GabIA.WPF\\PDFToPNGConverter.cs",
+              "RelativeToolTip": "PDFToPNGConverter.cs",
+              "ViewState": "AQIAANQAAAAAAAAAAAAywOIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-23T13:51:19.743Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

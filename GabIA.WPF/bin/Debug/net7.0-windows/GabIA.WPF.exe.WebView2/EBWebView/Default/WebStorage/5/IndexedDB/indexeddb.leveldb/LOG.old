@@ -1,0 +1,14 @@
+2023/12/26-11:15:04.776 8b1c Reusing MANIFEST D:\Usuários\gabinete\GabIA.WPF\bin\Debug\net7.0-windows\GabIA.WPF.exe.WebView2\EBWebView\Default\WebStorage\5\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2023/12/26-11:15:04.776 8b1c Recovering log #130
+2023/12/26-11:15:04.776 8b1c Reusing old log D:\Usuários\gabinete\GabIA.WPF\bin\Debug\net7.0-windows\GabIA.WPF.exe.WebView2\EBWebView\Default\WebStorage\5\IndexedDB\indexeddb.leveldb/000130.log 
+2023/12/26-11:15:04.777 8b1c Delete type=2 #128
+2023/12/26-11:15:04.866 8b1c Level-0 table #135: started
+2023/12/26-11:15:04.868 8b1c Level-0 table #135: 7595 bytes OK
+2023/12/26-11:15:04.869 8b1c Delete type=0 #130
+2023/12/26-11:15:04.870 3f8 Manual compaction at level-0 from '\x008\x00\x00\x00' @ 72057594037927935 : 1 .. '\x009\x00\x00\x00' @ 0 : 0; will stop at '\x008\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00@J1f\xcaxB\x00\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 7485 : 1
+2023/12/26-11:15:04.870 3f8 Compacting 1@0 + 1@1 files
+2023/12/26-11:15:04.872 3f8 Generated table #136@0: 342 keys, 5246 bytes
+2023/12/26-11:15:04.872 3f8 Compacted 1@0 + 1@1 files => 5246 bytes
+2023/12/26-11:15:04.872 3f8 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/12/26-11:15:04.873 3f8 Delete type=2 #135
+2023/12/26-11:15:04.873 6fe0 Manual compaction at level-0 from '\x008\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00@J1f\xcaxB\x00\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 7485 : 1 .. '\x009\x00\x00\x00' @ 0 : 0; will stop at (end)

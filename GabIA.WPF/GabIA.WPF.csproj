@@ -1,0 +1,195 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\icons8-artificial-intelligence-100.png" />
+    <None Remove="Assets\icons8-artificial-intelligence-67.png" />
+    <None Remove="Assets\icons8-database-100.png" />
+    <None Remove="Assets\icons8-export-pdf-100.png" />
+    <None Remove="Assets\icons8-internet-connection-100.png" />
+    <None Remove="Assets\icons8-pdf-window-100.png" />
+    <None Remove="Assets\icons8-process-100.png" />
+    <None Remove="Assets\icons8-tool-box-64.png" />
+    <None Remove="Assets\Ima_neogab.png" />
+    <None Remove="Assets\img_chrome.png" />
+    <None Remove="Assets\img_downloads.png" />
+    <None Remove="Assets\img_first_page.png" />
+    <None Remove="Assets\img_home.png" />
+    <None Remove="Assets\img_last_page.png" />
+    <None Remove="Assets\img_mail.png" />
+    <None Remove="Assets\img_next_page.png" />
+    <None Remove="Assets\img_photoshop.png" />
+    <None Remove="Assets\img_previous_page.png" />
+    <None Remove="Assets\img_settings.png" />
+    <None Remove="Assets\img_trash.png" />
+    <None Remove="Assets\img_user.png" />
+    <None Remove="Assets\img_vs.png" />
+    <None Remove="Assets\img_word.png" />
+    <None Remove="Assets\img_youtube.png" />
+    <None Remove="Assets\shutdown_def.png" />
+    <None Remove="Assets\shutdown_mo.png" />
+    <None Remove="Imagens\ExitIcon.png" />
+    <None Remove="Imagens\icons8-bot-64.png" />
+    <None Remove="Imagens\img_about.png" />
+    <None Remove="Imagens\img_artist.png" />
+    <None Remove="Imagens\img_exit.png" />
+    <None Remove="Imagens\img_folder.png" />
+    <None Remove="Imagens\img_history.png" />
+    <None Remove="Imagens\img_home.png" />
+    <None Remove="Imagens\img_movies.png" />
+    <None Remove="Imagens\img_music.png" />
+    <None Remove="Imagens\img_search.png" />
+    <None Remove="Imagens\img_setting.png" />
+    <None Remove="Imagens\MaximizeIcon.png" />
+    <None Remove="Imagens\max_def.png" />
+    <None Remove="Imagens\max_mo.png" />
+    <None Remove="Imagens\shutdown_def.png" />
+    <None Remove="Imagens\shutdown_mo.png" />
+    <None Remove="Libraries\PDF-Conversion.dll" />
+    <None Remove="Resources\Blank.pdf" />
+    <None Remove="Views\WebViewControl1.xaml~RF42812e4.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Resources\Dock Style.xaml" />
+    <Page Remove="Views\Resources\Dock Style.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Libraries\PDF-Conversion.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Adobe.PDFServicesSDK" Version="3.2.0" />
+    <PackageReference Include="Autofac" Version="7.0.1" />
+    <PackageReference Include="Avalonia" Version="0.10.19" />
+    <PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.11" />
+    <PackageReference Include="Azure.AI.TextAnalytics" Version="5.3.0" />
+    <PackageReference Include="Azure.Core" Version="1.36.0" />
+    <PackageReference Include="Azure.Identity" Version="1.10.4" />
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
+    <PackageReference Include="Ghostscript.NET" Version="1.2.3" />
+    <PackageReference Include="itext7" Version="7.2.5" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.ML" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1150.38" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="7.0.1" />
+    <PackageReference Include="NetMQ" Version="4.0.1.13" />
+    <PackageReference Include="PdfiumViewer.WPF" Version="1.0.6" />
+    <PackageReference Include="PdfPig" Version="0.1.7" />
+    <PackageReference Include="PdfSharp" Version="1.50.5147" />
+    <PackageReference Include="sautinsoft.pdffocus" Version="8.6.1.18" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.8.2" />
+    <PackageReference Include="SharpZipLib" Version="1.4.2" />
+    <PackageReference Include="SkiaSharp" Version="2.88.3" />
+    <PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
+    <PackageReference Include="Tesseract" Version="5.2.0" />
+    <PackageReference Include="Xpand.ExpressApp.Win.Para.WindowsIntegration" Version="13.2.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GabIA.BLL\GabIA.BLL\GabIA.BLL.csproj" />
+    <ProjectReference Include="..\GabIA.ENT\GabIA.ENT\GabIA.ENT.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\icons8-artificial-intelligence-100.png" />
+    <Resource Include="Assets\icons8-artificial-intelligence-67.png" />
+    <Resource Include="Assets\icons8-database-100.png" />
+    <Resource Include="Assets\icons8-export-pdf-100.png" />
+    <Resource Include="Assets\icons8-internet-connection-100.png" />
+    <Resource Include="Assets\icons8-pdf-window-100.png" />
+    <Resource Include="Assets\icons8-process-100.png" />
+    <Resource Include="Assets\icons8-tool-box-64.png" />
+    <Resource Include="Assets\Ima_neogab.png" />
+    <Resource Include="Assets\img_chrome.png" />
+    <Resource Include="Assets\img_downloads.png" />
+    <Resource Include="Assets\img_first_page.png" />
+    <Resource Include="Assets\img_home.png" />
+    <Resource Include="Assets\img_last_page.png" />
+    <Resource Include="Assets\img_mail.png" />
+    <Resource Include="Assets\img_next_page.png" />
+    <Resource Include="Assets\img_photoshop.png" />
+    <Resource Include="Assets\img_previous_page.png" />
+    <Resource Include="Assets\img_settings.png" />
+    <Resource Include="Assets\img_trash.png" />
+    <Resource Include="Assets\img_user.png" />
+    <Resource Include="Assets\img_vs.png" />
+    <Resource Include="Assets\img_word.png" />
+    <Resource Include="Assets\img_youtube.png" />
+    <Resource Include="Assets\shutdown_def.png" />
+    <Resource Include="Assets\shutdown_mo.png" />
+    <Resource Include="Imagens\ExitIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\icons8-bot-64.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_about.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_artist.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_exit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_folder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_history.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_home.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_movies.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_music.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_search.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\img_setting.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\MaximizeIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\max_def.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\max_mo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\shutdown_def.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\shutdown_mo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Blank.pdf" />
+    <Resource Include="Resources\Dock Style.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+  </ItemGroup>
+
+</Project>

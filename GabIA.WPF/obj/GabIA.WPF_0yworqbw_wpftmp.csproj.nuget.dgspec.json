@@ -1,0 +1,525 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.WPF\\GabIA.WPF.csproj": {}
+  },
+  "projects": {
+    "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\GabIA.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\GabIA.BLL.csproj",
+        "projectName": "GabIA.BLL",
+        "projectPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\GabIA.BLL.csproj",
+        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
+        "outputPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.WPF\\NuGet.Config",
+          "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\GabIA.DAL.csproj": {
+                "projectPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\GabIA.DAL.csproj"
+              },
+              "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj": {
+                "projectPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\GabIA.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\GabIA.DAL.csproj",
+        "projectName": "GabIA.DAL",
+        "projectPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\GabIA.DAL.csproj",
+        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
+        "outputPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.DAL\\GabIA.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.WPF\\NuGet.Config",
+          "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj": {
+                "projectPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.32.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj",
+        "projectName": "GabIA.ENT",
+        "projectPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj",
+        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
+        "outputPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.WPF\\NuGet.Config",
+          "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.WPF\\GabIA.WPF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.WPF\\GabIA.WPF.csproj",
+        "projectName": "GabIA.WPF",
+        "projectPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.WPF\\GabIA.WPF.csproj",
+        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
+        "outputPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.WPF\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.WPF\\NuGet.Config",
+          "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {
+              "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\GabIA.BLL.csproj": {
+                "projectPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.BLL\\GabIA.BLL\\GabIA.BLL.csproj"
+              },
+              "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj": {
+                "projectPath": "D:\\Usuarios\\DotNET\\Gabinete\\GabIA.ENT\\GabIA.ENT\\GabIA.ENT.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "Adobe.PDFServicesSDK": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Avalonia": {
+              "target": "Package",
+              "version": "[0.10.19, )"
+            },
+            "Azure.AI.OpenAI": {
+              "target": "Package",
+              "version": "[1.0.0-beta.11, )"
+            },
+            "Azure.AI.TextAnalytics": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Azure.Core": {
+              "target": "Package",
+              "version": "[1.36.0, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.10.4, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.20.0, )"
+            },
+            "Ghostscript.NET": {
+              "target": "Package",
+              "version": "[1.2.3, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.Web.WebView2": {
+              "target": "Package",
+              "version": "[1.0.1150.38, )"
+            },
+            "Microsoft.Windows.Compatibility": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "NetMQ": {
+              "target": "Package",
+              "version": "[4.0.1.13, )"
+            },
+            "PdfPig": {
+              "target": "Package",
+              "version": "[0.1.7, )"
+            },
+            "PdfSharp": {
+              "target": "Package",
+              "version": "[1.50.5147, )"
+            },
+            "PdfiumViewer.WPF": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Xpand.ExpressApp.Win.Para.WindowsIntegration": {
+              "target": "Package",
+              "version": "[13.2.6, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[7.2.5, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.15, )"
+            },
+            "sautinsoft.pdffocus": {
+              "target": "Package",
+              "version": "[8.6.1.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

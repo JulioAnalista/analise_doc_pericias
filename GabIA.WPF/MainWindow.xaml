@@ -1,0 +1,667 @@
+﻿<Window x:Class="GabIA.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:webView2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:local="clr-namespace:GabIA.WPF"
+        xmlns:controls="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
+        xmlns:viewmodels="clr-namespace:GabIA.WPF.ViewModels"
+        xmlns:views="clr-namespace:GabIA.WPF.Views"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        WindowStyle="None"
+        Title="NeoGAB - Desktop" Height="1020" Width="1900">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/resources/dock style.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="9"
+            Grid.RowSpan="9" x:Name="gridIntranet">
+            <webView2:WebView2 x:Name="webView" />
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="9"
+            Grid.RowSpan="9" x:Name="gridUserControl">
+            <views:NeoGabView x:Name="pdfUserControl" />
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="9" 
+              Grid.RowSpan="9" x:Name="procUserControl">
+            <ContentControl x:Name="ProcessosContentControl"/>
+        </Grid>
+
+        <Grid x:Name="gridRichTextBox" Grid.Row="0" Grid.Column="1" 
+                  Grid.ColumnSpan="9" Grid.RowSpan="9">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Adicionando o RichTextBox com fundo branco e texto preto -->
+            <RichTextBox Background="White" Foreground="Black" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <!-- Conteúdo do RichTextBox, se houver -->
+            </RichTextBox>
+
+            <!-- Menu para visualização -->
+            <Menu x:Name="menuVisualizar" Grid.Row="0" Grid.Column="1">
+                <!-- Adicione itens de menu conforme necessário -->
+            </Menu>
+
+            <!-- Grid para o editor de Rich Text e menu-->
+            <Grid Grid.Column="0" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Menu -->
+                    <RowDefinition Height="*"/>
+                    <!-- RichTextBox -->
+                </Grid.RowDefinitions>
+
+                <!-- Menu de Formatação Assistente -->
+                <Menu x:Name="menuEditorWP" Grid.Row="0" HorizontalAlignment="Stretch">
+                    <MenuItem Header="Arquivo">
+                        <MenuItem Header="Novo" Click="New_Click" />
+                        <MenuItem Header="Abrir" Click="Open_Click" />
+                        <MenuItem Header="Salvar Como" Click="Save_Click" />
+                        <Separator/>
+                        <MenuItem Header="Assistente IA">
+                            <MenuItem Header="Corrigir" Click="Correct_Click" />
+                            <MenuItem Header="Formatar e Corrigir" Click="FormatarEcorrigir_Click" />
+                            <MenuItem Header="Sumarizar" Click="Sumarizar_Click" />
+                        </MenuItem>
+                        <MenuItem Header="Exportar PDF" Click="ExportPDF_Click"/>
+                    </MenuItem>
+
+
+                    <MenuItem Header="Editar">
+                        <MenuItem Header="Cortar" Click="Cut_Click"/>
+                        <MenuItem Header="Copiar" Click="Copy_Click"/>
+                        <MenuItem Header="Colar" Click="Paste_Click"/>
+                        <MenuItem Header="Desfazer" Click="Undo_Click"/>
+                        <MenuItem Header="Refazer" Click="Redo_Click"/>
+                    </MenuItem>
+
+                    <MenuItem Header="Formatar">
+                        <MenuItem Header="Negrito" Click="Bold_Click"/>
+                        <MenuItem Header="Itálico" Click="Italic_Click"/>
+                        <MenuItem Header="Sublinhado" Click="Underline_Click"/>
+                        <MenuItem Header="Tamanho da fonte">
+                            <MenuItem Header="Editar">
+                                <MenuItem Header="Pequeno" Click="EditFontSizeSmall_Click"/>
+                                <MenuItem Header="Médio" Click="EditFontSizeMedium_Click"/>
+                                <MenuItem Header="Grande" Click="EditFontSizeLarge_Click"/>
+                            </MenuItem>
+                            <MenuItem Header="Visualizar">
+                                <MenuItem Header="Pequeno" Click="ViewFontSizeSmall_Click"/>
+                                <MenuItem Header="Médio" Click="ViewFontSizeMedium_Click"/>
+                                <MenuItem Header="Grande" Click="ViewFontSizeLarge_Click"/>
+                            </MenuItem>
+                        </MenuItem>
+                    </MenuItem>
+                </Menu>
+
+                <!-- Editor de Rich Text -->
+                <RichTextBox x:Name="richTextEdit" Grid.Row="1" Background="Black" 
+                                 Foreground="White" FontFamily="Arial" FontSize="17"/>
+            </Grid>
+
+            <!-- Grid para o visualizador de Rich Text -->
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <!-- RichTextBox -->
+                </Grid.RowDefinitions>
+
+                <!-- Visualizador de Rich Text -->
+                <RichTextBox x:Name="richTextVisualizer" Grid.Row="0" 
+                                 Background="White" Foreground="Black" FontFamily="Courier New" 
+                                 FontSize="15"/>
+            </Grid>
+            <TabControl x:Name="tabControlLLM_Processing" Grid.Column="0" Grid.Row="1" Visibility="Collapsed">
+                <TabItem Header="Processamento">
+                    <ScrollViewer>
+                        <RichTextBox x:Name="logRichTextBox" Background="Black" 
+                 FontFamily="Lucida Console" 
+                 FontSize="15" Foreground="#12F004" 
+                 AcceptsReturn="True" 
+                 IsReadOnly="True" 
+                 VerticalScrollBarVisibility="Auto"
+                 />
+                    </ScrollViewer>
+                </TabItem>
+
+                <TabItem Header="Resultados">
+                    <DataGrid x:Name="resultadosDataGrid">
+                        <!-- Configurações do DataGrid, como colunas e estilo, podem ser adicionadas aqui -->
+                    </DataGrid>
+                </TabItem>
+
+                <TabItem Header="Providências">
+                    <ListView x:Name="providenciasListView">
+                        <!-- Itens da lista e configurações podem ser adicionados aqui -->
+                    </ListView>
+                </TabItem>
+            </TabControl>
+
+
+            <webView2:WebView2 x:Name="azureView" Grid.Column="1" Grid.Row="1" Visibility="Collapsed"/>
+        </Grid>
+
+
+
+        <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="9" 
+              Grid.RowSpan="9" x:Name="gridProcesso">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*" x:Name="tela"/>
+            </Grid.ColumnDefinitions>
+            <!--menu processo !-->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="120" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="600" />
+                    </Grid.RowDefinitions>
+
+                    <Menu Grid.Row="0" Width="540" Margin="60,15" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                        <MenuItem Header="Processo" FontSize="18" Margin="10" >
+                            <MenuItem Header="Detalhes">
+                                <MenuItem Header="Petição Inicial" Click="MenuDeatalhesPeticao_Click"/>
+                                <MenuItem Header="Analítico" Click="MenuRelatorioAnalitico_Click"/>
+                            </MenuItem>
+                            <MenuItem Header="Atos Processuais" Click="MenuAtosProcessuais_Click"/>
+                            <MenuItem Header="Marcha Processual" Click="MenuMarchaProcessual_Click"/>
+                            <MenuItem Header="Utilitários">
+                                <MenuItem Header="Busca Semântica" Click="MenuBuscaSemantica_Click"/>
+                                <MenuItem Header="Trascrição de Áudio" Click="MenuTranscrição_Click"/>
+                            </MenuItem>
+                            <MenuItem Header="Relatório">
+                                <MenuItem Header="Sintético" Click="MenuRelatorioParecer_Click"/>
+                                <MenuItem Header="Sintético" Click="MenuRelatorioSintetico_Click"/>
+                                <MenuItem Header="Analítico" Click="MenuRelatorioAnalitico_Click"/>
+                            </MenuItem>
+                        </MenuItem>
+                    </Menu>
+
+
+
+                    <TextBox Grid.Row="1"
+                         x:Name="DadosDoProcesso"
+                         Margin="50,0"
+                         FontFamily="Arial"
+                         FontSize="15"
+                         Width="440"
+                         Height="190"
+                             Text="Teste de texto"
+                         Background="Black"
+                         Foreground="LightGray"
+                         BorderBrush="Transparent"
+                         BorderThickness="0"/>
+
+
+                    <TreeView Grid.Column="0"
+                      x:Name="treeViewProcesso" 
+                      Grid.Row="2"
+                      Background="Black"
+                      Margin="30,20"
+                      FontFamily="Calibri"
+                      FontSize="15"
+                      Width="435"
+                      Height="600"
+                      SelectedItemChanged="TreeViewProcesso_SelectedItemChanged">
+                        <!-- Restante do conteúdo do TreeView -->
+                    </TreeView>
+                </Grid>
+            </ScrollViewer>
+
+            <Grid Grid.Column="1">
+                <TabControl x:Name="tabPecas">
+                    <TabControl.Resources>
+                        <Style TargetType="TabItem">
+                            <Setter Property="HeaderTemplate">
+                                <Setter.Value>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" TextWrapping="Wrap" TextAlignment="Center"/>
+                                    </DataTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </TabControl.Resources>
+                    <TabItem Header="PDF">
+                        <Grid>
+                            <webView2:WebView2 x:Name="pdfWebView" />
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="TEXTO">
+                        <Grid>
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" VerticalAlignment="Top">
+                                <RichTextBox x:Name="textBoxConteudo"  />
+                            </ScrollViewer>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="RESUMO">
+                        <Grid>
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" VerticalAlignment="Top">
+                                <RichTextBox x:Name="textBoxResumo" />
+                            </ScrollViewer>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+
+        </Grid>
+
+        <DockPanel Background="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5">
+            <StackPanel>
+                <Button Height="50" 
+                     Margin="0,120,0,0" 
+                     Width="160"
+                     FontFamily="Oswald"
+                     HorizontalContentAlignment="Left"
+                     Click="NeoGabView_Clicked">
+                    <StackPanel Orientation="Horizontal">
+                        <Image  Source="/Assets/Ima_neogab.png" Height="30" Width="30" Margin="5"/>
+                        <TextBlock Text="NeoGab MP" FontFamily="BankGothic Lt BT Leve" FontSize="13" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" />
+                    </StackPanel>
+                </Button>
+                <Button Height="50" 
+                        Margin="0,10,0,0" 
+                        FontFamily="Oswald"
+                        FontSize="14"
+                        FontWeight="DemiBold"
+                        HorizontalContentAlignment="Left"
+                        Click="CarregaProcessos_Clicked">
+                    <StackPanel Orientation="Horizontal" >
+                        <Image  Source="/Assets/icons8-process-100.png" Height="30" Width="30" Margin="5"/>
+                        <TextBlock Text="Atualizar" FontFamily="BankGothic Lt BT Leve" 
+                                   FontSize="13" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" />
+                    </StackPanel>
+                </Button>
+                <Button Height="50" 
+                        Margin="0,10,0,0" 
+                        HorizontalContentAlignment="Left"
+                        Click="PDF_View_Clicked">
+                    <StackPanel Orientation="Horizontal">
+                        <Image  Source="/Assets/icons8-export-pdf-100.png" Height="30" Width="30" Margin="5"/>
+                        <TextBlock Text="Baixar PDF" FontFamily="BankGothic Lt BT Leve" FontSize="13" 
+                                   FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" />
+                    </StackPanel>
+                </Button>
+                <Button Height="50" 
+                        Margin="0,10,0,0" 
+                        HorizontalContentAlignment="Left"
+                        Click="Separa_Pecas_PDF_Clicked">
+                    <StackPanel Orientation="Horizontal">
+                        <Image  Source="/Assets/icons8-tool-box-64.png" Height="30" Width="30" Margin="5"/>
+                        <TextBlock Text="Pre-Processar" FontFamily="BankGothic Lt BT Leve" FontSize="13" 
+                                   FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" />
+                    </StackPanel>
+                </Button>
+                <Button Height="50" 
+                        Margin="0,10,0,0" 
+                        HorizontalContentAlignment="Left"
+                        Click="Carrega_Processos_Button">
+                    <StackPanel Orientation="Horizontal">
+                        <Image  Source="/Assets/icons8-artificial-intelligence-67.png" Height="43" Width="43" Margin="5"/>
+                        <TextBlock Text="Processos"  FontFamily="BankGothic Lt BT Leve" FontSize="13" 
+                                   FontWeight="DemiBold" 
+                                   VerticalAlignment="Center" 
+                                   HorizontalAlignment="Left" 
+                                   Margin="5" />
+                    </StackPanel>
+                </Button>
+                <Button Height="50" 
+                        Margin="0,10,0,0" 
+                        HorizontalContentAlignment="Left"
+                        Click="BuscaProcessoEspecífico">
+                    <StackPanel Orientation="Horizontal">
+                        <Image  Source="/Assets/icons8-artificial-intelligence-100.png" Height="35" Width="35" Margin="5"/>
+                        <TextBlock Text="Assistente" FontFamily="BankGothic Lt BT Leve" 
+                                   FontSize="14" FontWeight="DemiBold" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" />
+                    </StackPanel>
+                </Button>
+                <Button Height="50"
+                        x:Name="btnFerramentas"
+                        Margin="0,10,0,0" 
+                        HorizontalContentAlignment="Left"
+                        Click="FerramentasSlideDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image  Source="/Assets/img_settings.png" Height="30" Width="30" Margin="5"/>
+                        <TextBlock Text="Ferramentas" FontFamily="BankGothic Lt BT Leve" 
+                                   FontSize="14" FontWeight="DemiBold" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Left" Margin="5" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </DockPanel>
+        <DockPanel Background="LightGray" Grid.Row="5" Grid.Column="0" Grid.RowSpan="4">
+            <Grid x:Name="Ferramentas" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="220"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Background="Gray" Grid.Row="0" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <!-- Botões -->
+                    <Button x:Name="OCR_Button" 
+                            Grid.Column="0" 
+                            Grid.Row="0" 
+                            Style="{StaticResource DockBtnStyle}" Click="OCR_Button_Click" Height="50" Margin="10,13,19,0" VerticalAlignment="Top">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Assets/img_home.png"
+                                                Stretch="Uniform" />
+                        </Button.Background>
+                        <Popup Width="70"
+                                   Placement="{Binding ElementName=home}"
+                                   IsOpen="{Binding ElementName=home, Path=IsMouseOver, Mode=OneWay}"
+                                   Style="{StaticResource PopupStyle}">
+                            <Grid>
+                                <Border Style="{StaticResource border}">
+                                    <TextBlock Text="Home"
+                                                   Style="{StaticResource PopupText}" />
+
+                                </Border>
+
+                                <Path Style="{StaticResource ArrowPath}" />
+                            </Grid>
+                        </Popup>
+                    </Button>
+
+                    <Button x:Name="Process_Button" 
+                            Grid.Column="1" 
+                            Grid.Row="0" 
+                            Style="{StaticResource DockBtnStyle}" Click="Process_Button_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Assets/Img_settings.png"
+                                                Stretch="Uniform" />
+                        </Button.Background>
+                        <Popup Width="70"
+                                   Placement="{Binding ElementName=home}"
+                                   IsOpen="{Binding ElementName=home, Path=IsMouseOver, Mode=OneWay}"
+                                   Style="{StaticResource PopupStyle}">
+                            <Grid>
+                                <Border Style="{StaticResource border}">
+                                    <TextBlock Text="Home"
+                                                   Style="{StaticResource PopupText}" />
+
+                                </Border>
+
+                                <Path Style="{StaticResource ArrowPath}" />
+                            </Grid>
+                        </Popup>
+                    </Button>
+                    <Button x:Name="Carrega_Processos_Button1" 
+                            Grid.Column="0" 
+                            Grid.Row="1" 
+                            Style="{StaticResource DockBtnStyle}" Click="Chat_Button_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Assets/icons8-database-100.png"
+                                                Stretch="Uniform" />
+                        </Button.Background>
+                        <Popup Width="70"
+                                   Placement="{Binding ElementName=home}"
+                                   IsOpen="{Binding ElementName=home, Path=IsMouseOver, Mode=OneWay}"
+                                   Style="{StaticResource PopupStyle}">
+                            <Grid>
+                                <Border Style="{StaticResource border}">
+                                    <TextBlock Text="Home"
+                                                   Style="{StaticResource PopupText}" />
+
+                                </Border>
+
+                                <Path Style="{StaticResource ArrowPath}" />
+                            </Grid>
+                        </Popup>
+                    </Button>
+                    <Button x:Name="Navega_Processo" 
+                            Grid.Column="1" 
+                            Grid.Row="1" 
+                            Style="{StaticResource DockBtnStyle}" Click="Navega_Button_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Assets/icons8-pdf-window-100.png"
+                                                Stretch="Uniform" />
+                        </Button.Background>
+                        <Popup Width="70"
+                                   Placement="{Binding ElementName=home}"
+                                   IsOpen="{Binding ElementName=home, Path=IsMouseOver, Mode=OneWay}"
+                                   Style="{StaticResource PopupStyle}">
+                            <Grid>
+                                <Border Style="{StaticResource border}">
+                                    <TextBlock Text="Home"
+                                                   Style="{StaticResource PopupText}" />
+
+                                </Border>
+
+                                <Path Style="{StaticResource ArrowPath}" />
+                            </Grid>
+                        </Popup>
+                    </Button>
+                    <Button x:Name="Res2_Button" 
+                            Grid.Column="0" 
+                            Grid.Row="2" 
+                            Style="{StaticResource DockBtnStyle}" Click="Separa_Pecas_PDF_Button_Click" Height="50" 
+                                    Margin="15,11,14,0" VerticalAlignment="Top">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Assets/icons8-artificial-intelligence-67.png"
+                                                Stretch="Uniform" />
+                        </Button.Background>
+                        <Popup Width="70"
+                                   Placement="{Binding ElementName=home}"
+                                   IsOpen="{Binding ElementName=home, Path=IsMouseOver, Mode=OneWay}"
+                                   Style="{StaticResource PopupStyle}">
+                            <Grid>
+                                <Border Style="{StaticResource border}">
+                                    <TextBlock Text="Home"
+                                                   Style="{StaticResource PopupText}" />
+
+                                </Border>
+
+                                <Path Style="{StaticResource ArrowPath}" />
+                            </Grid>
+                        </Popup>
+                    </Button>
+                    <Button x:Name="Res3_Button" 
+                            Grid.Column="1" 
+                            Grid.Row="2" 
+                            Command="{Binding ExtractPanelsCommand}"
+                            Style="{StaticResource DockBtnStyle}" 
+                            Click="DownloadPDF_Click" Height="50" Margin="15,11,14,0" VerticalAlignment="Top">
+                        <Button.Background>
+                            <ImageBrush ImageSource="pack://application:,,,/Assets/img_youtube.png"
+                                                Stretch="Uniform" />
+                        </Button.Background>
+                        <Popup Width="70"
+                                   Placement="{Binding ElementName=home}"
+                                   IsOpen="{Binding ElementName=home, Path=IsMouseOver, Mode=OneWay}"
+                                   Style="{StaticResource PopupStyle}">
+                            <Grid>
+                                <Border Style="{StaticResource border}">
+                                    <TextBlock Text="Home"
+                                                   Style="{StaticResource PopupText}" />
+
+                                </Border>
+
+                                <Path Style="{StaticResource ArrowPath}" />
+                            </Grid>
+                        </Popup>
+                    </Button>
+                </Grid>
+                <Grid x:Name="ProgressBarGridPai" Grid.Row="3" Background="White" Height="70" >
+                    <Grid>
+                        <!-- Adicione outros elementos do layout aqui, como outros painéis, botões, etc. -->
+
+                        <Grid x:Name="ProgressBarGrid1" Background="BurlyWood"  HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="30">
+                            <ProgressBar x:Name="ProgressBarFilho" Minimum="0" Maximum="100" Height="30" Background="Transparent" Foreground="Blue" Opacity="0.5"/>
+                        </Grid>
+                        <Grid x:Name="ProgressBarGrid2" Background="AliceBlue" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="30">
+                            <ProgressBar x:Name="ProgressBarPai" Minimum="0" Maximum="100" Height="30" Background="Transparent" Foreground="Blue" Opacity="0.5"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <!-- meu menu -->
+
+                <!--<StackPanel Background="Gray" Grid.Row="0" Grid.Column="0" >
+                    -->
+                <!--Aqui o meu menu-->
+                <!--
+
+                </StackPanel>-->
+                <StackPanel Background="White" Grid.Row="1" 
+                            Grid.Column="0">
+                    <!--Aqui o meu menu-->
+                    <ListView x:Name="ProcessListView">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="By: Julio Cesar Silveira" DisplayMemberBinding="{Binding ProcessNumber}" />
+                                <!-- Adicione outras colunas, se necessário -->
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </StackPanel>
+
+            </Grid>
+        </DockPanel>
+        <DockPanel Background="WhiteSmoke" Grid.Row="1" 
+                   Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="9">
+            <Grid x:Name="Inicial">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="320"/>
+                </Grid.ColumnDefinitions>
+                <ContentControl x:Name="WebViewContentControl" Grid.Row="1" />
+                <ContentControl x:Name="WebViewContentControlJusBrasil" Grid.Row="3" />
+                <ContentControl x:Name="WebViewContentControlMigalhas" Grid.Row="5" />
+                <Button x:Name="btnSite1" 
+                    Content="Conjur" 
+                    FontFamily="Oswald"
+                    FontSize="14"
+                    FontWeight="DemiBold"
+                    Margin="0,10,0,0"
+                    Grid.Row="0" Click="btnSite1_Click" Height="30" VerticalAlignment="Top" />
+                <Button x:Name="btnSite2" 
+                    Content="JusBrasil" 
+                    FontFamily="Oswald"
+                    FontSize="14"
+                    FontWeight="DemiBold"
+                    Margin="0,10,0,0"
+                    Grid.Row="2" Click="btnSite2_Click" />
+                <Button x:Name="btnSite3" 
+                    Content="Migalhas" 
+                    FontFamily="Oswald"
+                    FontSize="14"
+                    FontWeight="DemiBold"
+                    Margin="0,10,0,0"
+                    Grid.Row="4"  Click="btnSite3_Click"/>
+                <Button x:Name="btnSite4" 
+                    Content="Vademecum" 
+                    FontFamily="Oswald"
+                    FontSize="14"
+                    FontWeight="DemiBold"
+                    Margin="0,10,0,0"
+                    Grid.Row="6" />
+                <Button x:Name="btnSite5" 
+                    Content="Jurisprudência" 
+                    FontFamily="Oswald"
+                    FontSize="14"
+                    FontWeight="DemiBold"
+                    Margin="0,10,0,0"
+                    Grid.Row="8" />
+
+                <TreeView Grid.Row="7" Name="MyTreeView">
+                    <TreeViewItem Header="Legislação" FontSize="13">
+                        <TreeViewItem Header="Constituição Federal"/>
+                        <TreeViewItem Header="Código Civil"/>
+                        <TreeViewItem Header="Código de Proceso Civil"/>
+                        <TreeViewItem Header="Estatuto da Criança"/>
+                        <TreeViewItem Header="Lei de Alimentos"/>
+                        <TreeViewItem Header="Código do Consumidor"/>
+                        <TreeViewItem Header="Lei de Falências"/>
+                        <TreeViewItem Header="Lei de Improbidade"/>
+                    </TreeViewItem>
+                </TreeView>
+            </Grid>
+
+            <StackPanel>
+                <!--Aqui o meu menu-->
+
+            </StackPanel>
+        </DockPanel>
+
+        <DockPanel Grid.Column="11" Grid.Row="0" >
+            <Grid>
+                <Button x:Name="ExitBtn" 
+            Style="{StaticResource CloseBtnStyle}" 
+            HorizontalAlignment="Right" 
+            VerticalAlignment="Center" 
+            Margin="0,14,35,0"
+            Click="ExitBtn_Click" 
+            />
+            </Grid>
+        </DockPanel>
+
+    </Grid>
+</Window>

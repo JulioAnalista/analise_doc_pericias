@@ -1,0 +1,1104 @@
+@charset "UTF-8";
+/*!
+ * Copyright (c) 2017-2019, F5 Networks, Inc. All rights reserved.
+ *
+ * No part of this software may be reproduced or transmitted in any
+ * form or by any means, electronic or mechanical, for any purpose,
+ * without express written permission of F5 Networks, Inc.
+ */
+/**
+ * Non-scoped fixes for browser style quirks and inconsistencies
+ */
+/* Make sure that legacy browsers correctly display hidden */
+[hidden] {
+  display: none;
+}
+
+/* Restore default appearance of ui elements in Safari */
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+}
+
+/* Inherit fonts from the document */
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  text-transform: none;
+}
+
+/* Fix text wrapping and color inheritance in IE11+ */
+legend {
+  color: inherit;
+  max-width: 100%;
+  white-space: normal;
+}
+
+/* Use the whole screen height for application container */
+html,
+body,
+.apmui-container,
+.apmui-root {
+  display: flex;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+/* work around IE11 flex min-height issue */
+body {
+  min-height: 100vh;
+}
+
+/* Suppress scrolling (does not work on iOS Safari) */
+.apmui-nonscrollable {
+  overflow: hidden;
+}
+
+/* Set fonts for all top-level containers */
+.apmui-modal,
+.apmui-root {
+  color: #000000;
+  font-size: 14px;
+  /* Latin fonts */
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, "DejaVu Sans", Roboto, Arial, sans-serif;
+}
+.apmui-modal:lang(ja),
+.apmui-root:lang(ja) {
+  /* Japanese fonts */
+  font-family: "Noto Sans CJK JP", "Segoe UI", "Helvetica Neue", Helvetica, "DejaVu Sans", Roboto, "Yu Gothic", "Hiragino Kaku Gothic Pro", Arial, sans-serif;
+}
+.apmui-modal:lang(ko),
+.apmui-root:lang(ko) {
+  /* Korean fonts */
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Gulim", "Noto Sans CJK KR", "Segoe UI", "Helvetica Neue", Helvetica, "DejaVu Sans", Roboto, Arial, sans-serif;
+}
+.apmui-modal:lang(zh-cn),
+.apmui-root:lang(zh-cn) {
+  /* Simplified Chinese fonts */
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Segoe UI", "Helvetica Neue", Helvetica, "DejaVu Sans", Roboto, Arial, sans-serif;
+}
+.apmui-modal:lang(zh-tw),
+.apmui-root:lang(zh-tw) {
+  /* Traditional Chinese fonts */
+  font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans CJK TC", "Segoe UI", "Helvetica Neue", Helvetica, "DejaVu Sans", Roboto, Arial, sans-serif;
+}
+
+.apmui-root {
+  flex-direction: column;
+}
+.apmui-root .error-detail {
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: smaller;
+}
+
+/*
+ * Styles for page header
+ */
+.apmui-header {
+  display: block;
+  width: 100%;
+  background-color: #D01523;
+  min-height: 80px;
+  border-top: 6px solid #D01523;
+  /* shadow */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  z-index: 50;
+  /*
+   * Show smaller header for mobile devices in both orientations
+   */
+  /*
+   * Show separators for desktop screen size
+   */
+}
+.apmui-header--logo {
+  margin: 10px 10px 10px 0;
+}
+.apmui-header--logo, .apmui-header--logo img {
+  max-height: 60px;
+}
+.apmui-header--content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  max-width: 560px;
+  color: #545454;
+}
+.apmui-header--content > span {
+  font-size: 20px;
+  line-height: 48px;
+  margin-right: auto;
+}
+.apmui-header--controls {
+  margin-left: auto;
+  margin-right: 16px;
+}
+.apmui-header--controls, .apmui-header--buttons {
+  align-items: center;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  height: 48px;
+}
+.apmui-header--controls > :not(:last-child), .apmui-header--buttons > :not(:last-child) {
+  margin-right: 16px;
+}
+@media screen and (max-width: 586px) {
+  .apmui-header {
+    min-height: 40px;
+    border-top-width: 3px;
+  }
+  .apmui-header--content > span, .apmui-header--timeout {
+    display: none;
+  }
+  .apmui-header--controls, .apmui-header--buttons {
+    height: auto;
+  }
+  .apmui-header--controls > :not(:last-child), .apmui-header--buttons > :not(:last-child) {
+    margin-right: 8px;
+  }
+  .apmui-header--logo {
+    margin: 5px 5px 5px 30px;
+  }
+  .apmui-header--logo, .apmui-header--logo img {
+    max-height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .apmui-header--content > span:not(:empty) {
+    border-left: 2px solid lightgray;
+    padding-left: 16px;
+  }
+  .apmui-header--buttons::before {
+    border-left: 2px solid lightgray;
+    content: " ";
+    height: 100%;
+    padding-right: 16px;
+  }
+}
+
+/*
+ * Styles for main content container
+ */
+.apmui-main {
+  display: flex;
+  flex: 2 1 auto;
+  background-color: #D9D9D9;
+}
+
+/*
+ * Styles for page footer
+ */
+.apmui-footer {
+  display: block;
+  width: 100%;
+  min-height: 49px;
+  font-size: 13px;
+  color: #4a4a4a;
+  background-color: #F0F0F0;
+  /* shadow */
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+  z-index: 50;
+}
+.apmui-footer--content {
+  padding-left: 30px;
+  padding-top: 16px;
+  padding-right: 30px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.apmui-u-vertical-aligned {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.apmui-u-vertical-aligned[hidden] {
+  display: none;
+}
+
+.apmui-expandable--caption {
+  cursor: pointer;
+  display: inline-block;
+}
+.apmui-expandable--caption::after {
+  content: "\25B8";
+}
+.apmui-expandable[open] .apmui-expandable--caption::after {
+  content: "\25BE";
+}
+.apmui-expandable:not([open]) > :not(.apmui-expandable--caption) {
+  display: none;
+}
+
+.apmui-link {
+  color: #D01523;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.apmui-button {
+  display: inline-block;
+  height: 40px;
+  max-width: 400px;
+  min-width: 140px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: white;
+  border-color: #D01523;
+  color: #D01523;
+  cursor: pointer;
+}
+.apmui-button-submit {
+  background-color: #D01523;
+  color: #FFFFFF;
+}
+.apmui-button-wide {
+  min-width: 160px;
+}
+.apmui-button-inline {
+  -webkit-appearance: none;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  min-width: 0;
+  line-height: normal;
+  padding: 0;
+}
+.apmui-button-logout {
+  height: 28px;
+  line-height: 24px;
+  min-width: auto;
+  background-color: transparent;
+  border-color: transparent;
+}
+.apmui-button-logout:hover {
+  border-color: #D01523;
+}
+.apmui-button-settings {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 14px;
+  padding: 0;
+  width: auto;
+}
+.apmui-button-settings:hover {
+  background-color: #cdcdcd;
+}
+.apmui-button-settings,
+.apmui-button-settings img {
+  height: 28px;
+}
+.apmui-button[hidden] {
+  display: none;
+}
+
+.apmui-form label {
+  display: inline-block;
+  font-size: 13px;
+  margin: 3px 0px;
+}
+.apmui-form input[type=password],
+.apmui-form input[type=tel],
+.apmui-form input[type=text],
+.apmui-form select {
+  display: block;
+  height: 40px;
+  max-width: 400px;
+  width: 100%;
+  border-color: #cdcdcd;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+}
+.apmui-form input[type=password],
+.apmui-form input[type=tel],
+.apmui-form input[type=text] {
+  padding: 0 10px;
+}
+.apmui-form select {
+  padding-left: 10px;
+}
+.apmui-form input[type=checkbox],
+.apmui-form input[type=checkbox] + label,
+.apmui-form input[type=radio],
+.apmui-form input[type=radio] + label {
+  display: inline-block;
+  margin: auto 16px auto 0;
+  padding: 0;
+  vertical-align: middle;
+}
+.apmui-form fieldset.form-input-container {
+  /* use following snippet for browser defaults:
+   * border-style: groove;
+   * padding: 0.35em 0.75em 0.625em;
+   */
+  border-style: none;
+  padding: 0;
+}
+.apmui-form fieldset.form-input-container legend {
+  padding: 0px;
+  margin: 0px;
+}
+.apmui-form fieldset.form-input-container p {
+  padding: 0;
+  margin: 12px 0;
+}
+.apmui-form fieldset.form-input-container p:last-child {
+  margin-bottom: 0;
+}
+.apmui-form .form-input-container {
+  margin: 24px 0 0;
+}
+.apmui-form .form-input-container p {
+  display: flex;
+  margin: 3px 0px;
+}
+.apmui-form .form-input-invalid input[type=password]:not(:focus),
+.apmui-form .form-input-invalid input[type=tel]:not(:focus),
+.apmui-form .form-input-invalid input[type=text]:not(:focus),
+.apmui-form .form-input-invalid select:not(:focus) {
+  border-color: #e51937;
+  box-shadow: 0 0 2px #e51937 inset;
+}
+.apmui-form .input-error-message {
+  color: #e51937;
+  font-size: small;
+}
+.apmui-form .input-error-message:empty {
+  display: none;
+}
+.apmui-form > *:last-child {
+  margin-bottom: 0;
+}
+.apmui-form > *:first-child {
+  margin-top: 0;
+}
+
+/**
+ * Default policy page styles
+ */
+.apmui-content {
+  display: block;
+  width: 100%;
+  min-height: 320px;
+  max-width: 560px;
+  box-sizing: border-box;
+  align-self: flex-start;
+  margin: 80px auto 20px auto;
+  padding: 50px 80px 80px;
+  background: #FFFFFF;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 25;
+}
+@media screen and (max-width: 586px) {
+  .apmui-content {
+    /* Hide borders and reduce padding if the screen is too narrow */
+    align-self: stretch;
+    max-width: 100%;
+    padding: 20px 30px;
+    margin: 0px;
+    box-shadow: none;
+  }
+}
+.apmui-content > *:first-child {
+  margin-top: 0;
+}
+.apmui-content h2 {
+  font-size: 1.7em;
+  line-height: 1.16;
+}
+.apmui-content #page-custom-message {
+  color: gray;
+  font-size: 13px;
+}
+
+/**
+ * Notification popup styles
+ */
+.apmui-notification {
+  display: inline-flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  padding: 25px 60px;
+  pointer-events: auto;
+}
+.apmui-notification:not(:last-of-type) {
+  margin-top: 0;
+}
+.apmui-notification p {
+  margin: 0;
+}
+.apmui-notification.notification-info::before {
+  content: url("/public/images/modern/eps/info.png");
+  padding-right: 10px;
+}
+.apmui-notification--container {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/*
+ * Logout page styles
+ */
+.apmui-page-logout p {
+  border: 0px;
+  margin: 20px 0px 0px 0px;
+}
+
+/**
+ * Logon page styles
+ */
+.apmui-page-logon div.page-logon-postheader {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+.apmui-page-logon div.captcha {
+  margin: 24px 0;
+}
+.apmui-page-logon div.captcha div.error {
+  color: #e51937;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.apmui-page-decision-box .apmui-link {
+  line-height: 18px;
+}
+.apmui-page-decision-box .apmui-link > img {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.apmui-page-tas-auth ol,
+.apmui-page-tas-device-registration ol {
+  padding-left: 20px;
+}
+.apmui-page-tas-auth .auth-mobile,
+.apmui-page-tas-device-registration .auth-mobile {
+  display: flex;
+  align-items: center;
+  /* reset flex-direction to get image on the left and text on the right */
+  flex-direction: column-reverse;
+}
+.apmui-page-tas-auth .auth-mobile--message,
+.apmui-page-tas-device-registration .auth-mobile--message {
+  display: inline-block;
+  width: 100%;
+}
+.apmui-page-tas-auth .registration-options,
+.apmui-page-tas-device-registration .registration-options {
+  display: flex;
+  align-items: stretch;
+  flex-flow: row wrap;
+  min-width: 100%;
+}
+.apmui-page-tas-auth .registration-options p:first-child,
+.apmui-page-tas-device-registration .registration-options p:first-child {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.apmui-page-tas-auth .registration-sms,
+.apmui-page-tas-device-registration .registration-sms {
+  flex: 1 1 auto;
+}
+.apmui-page-tas-auth .registration-qrcode,
+.apmui-page-tas-device-registration .registration-qrcode {
+  width: 180px;
+}
+.apmui-page-tas-auth .button-container,
+.apmui-page-tas-device-registration .button-container {
+  margin-right: 10px;
+}
+.apmui-page-tas-auth .button-container:last-of-type,
+.apmui-page-tas-device-registration .button-container:last-of-type {
+  margin-right: 0;
+}
+.apmui-page-tas-auth .separator,
+.apmui-page-tas-device-registration .separator {
+  align-items: center;
+  display: flex;
+  font-size: small;
+  justify-content: center;
+  position: relative;
+}
+.apmui-page-tas-auth .separator::before, .apmui-page-tas-auth .separator::after,
+.apmui-page-tas-device-registration .separator::before,
+.apmui-page-tas-device-registration .separator::after {
+  background: #cdcdcd;
+  content: "";
+  flex: 1;
+  margin: 0.25em;
+}
+.apmui-page-tas-auth .separator-h,
+.apmui-page-tas-device-registration .separator-h {
+  flex-direction: row;
+  line-height: 32px;
+}
+.apmui-page-tas-auth .separator-h::after, .apmui-page-tas-auth .separator-h::before,
+.apmui-page-tas-device-registration .separator-h::after,
+.apmui-page-tas-device-registration .separator-h::before {
+  height: 1px;
+}
+.apmui-page-tas-auth .separator-v,
+.apmui-page-tas-device-registration .separator-v {
+  flex-direction: column;
+  margin: 0 3px;
+  min-width: 32px;
+}
+.apmui-page-tas-auth .separator-v::after, .apmui-page-tas-auth .separator-v::before,
+.apmui-page-tas-device-registration .separator-v::after,
+.apmui-page-tas-device-registration .separator-v::before {
+  width: 1px;
+}
+@media screen and (max-width: 586px) {
+  .apmui-page-tas-auth .registration-options,
+.apmui-page-tas-device-registration .registration-options {
+    flex-flow: column wrap;
+  }
+  .apmui-page-tas-auth .separator-v,
+.apmui-page-tas-device-registration .separator-v {
+    flex-direction: row;
+    line-height: 32px;
+    margin: 3px 0;
+    min-width: auto;
+  }
+  .apmui-page-tas-auth .separator-v::after, .apmui-page-tas-auth .separator-v::before,
+.apmui-page-tas-device-registration .separator-v::after,
+.apmui-page-tas-device-registration .separator-v::before {
+    height: 1px;
+    width: auto;
+  }
+}
+
+/**
+ * Full Webtop styles
+ */
+.apmui-page-webtop {
+  /* Modify styles for page header */
+}
+.apmui-page-webtop .apmui-header {
+  /* Header shadow removed; on webtop page it is shown by div.header-toolbar */
+  box-shadow: none;
+}
+.apmui-page-webtop .apmui-header--content {
+  /* Show full-width header on webtop */
+  max-width: 100%;
+}
+.apmui-page-webtop .apmui-header--logo {
+  margin-left: 20px;
+}
+.apmui-page-webtop .apmui-webtop-content {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column;
+  padding: 10px 20px;
+  /* IE11: limit width of container to avoid scrolling */
+  width: 100%;
+  z-index: 25;
+}
+
+.apmui-webtop-folder-browser {
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  margin-top: 8px;
+  margin-bottom: 7px;
+  max-width: 100%;
+}
+.apmui-webtop-folder-browser.apmui-modal {
+  margin: auto 80px;
+  top: 160px;
+}
+@media screen and (max-width: 586px) {
+  .apmui-webtop-folder-browser.apmui-modal {
+    margin: 8px auto 7px;
+  }
+}
+.apmui-webtop-folder-browser:not(.apmui-modal) {
+  /* add invisible border to prevent margin collapsing */
+  border-bottom: 1px solid transparent;
+  position: relative;
+}
+.apmui-webtop-folder-browser .apmui-modal--body {
+  padding: 0;
+}
+.apmui-webtop-folder-browser .apmui-modal--close {
+  top: 8px;
+  right: 8px;
+}
+.apmui-webtop-folder-browser .apmui-webtop-section {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+.apmui-webtop-folder-browser .folder-browser-address {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  padding: 13px 16px;
+  margin-bottom: 8px;
+}
+.apmui-webtop-folder-browser .folder-browser-address > :not(:last-child) {
+  padding-right: 0.5em;
+}
+.apmui-webtop-folder-browser .folder-browser-address a {
+  color: #D01523;
+  text-decoration: none;
+}
+.apmui-webtop-folder-browser .folder-browser-address img {
+  height: 22px;
+}
+.apmui-webtop-folder-browser .webtop-folder-link {
+  font-weight: 600;
+}
+.apmui-webtop-folder-browser .webtop-folder-link:not(:first-of-type)::before {
+  content: ">";
+  padding-right: 0.4em;
+}
+
+div#webtop-toolbar {
+  display: flex;
+  margin: 16px 0 24px;
+  width: 100%;
+}
+
+div#webtop-settings {
+  margin-left: auto;
+}
+
+.apmui-input-text {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.apmui-input-text .apmui-input--icon {
+  position: absolute;
+  margin: auto;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+}
+.apmui-input-text input {
+  border: #cdcdcd solid 1px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 33px;
+  line-height: 27px;
+  padding: 1px 10px;
+  width: 100%;
+}
+.apmui-input-text .apmui-input--icon + input {
+  padding-left: 33px;
+}
+
+#webtop-search {
+  max-width: 400px;
+}
+
+div.header-toolbar {
+  display: flex;
+  /* negative margin to get full screen width and no gap from header */
+  margin: -10px -20px 0 -20px;
+  width: auto;
+  border-top: 1px solid #bdbdbd;
+  background: #fafafa;
+  /* shadow */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+#webtop-url-input {
+  max-width: 600px;
+  margin: 16px 20px;
+}
+#webtop-url-input .apmui-input--icon {
+  left: 10px;
+}
+#webtop-url-input input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#webtop-url-input button {
+  width: 40px;
+  height: 100%;
+  background: #f2f2f2;
+  border: #cdcdcd solid 1px;
+  border-left: none;
+}
+#webtop-url-input button > img {
+  margin: auto;
+}
+
+.apmui-webtop-section {
+  margin-bottom: 24px;
+}
+.apmui-webtop-section--caption {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.25;
+  max-height: 50px;
+  overflow: hidden;
+  padding-bottom: 1px;
+  text-overflow: ellipsis;
+}
+.apmui-webtop-section--body {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 8px -8px 0;
+}
+.apmui-webtop-section--body > * {
+  margin: 8px;
+}
+
+.apmui-webtop-resource {
+  background: white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  height: 122px;
+  padding: 12px 18px;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  width: 252px;
+  /* Separate rule for :focus-within because of MSIE */
+}
+.apmui-webtop-resource:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1), 0px 6px 6px 0px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 0.3s ease;
+}
+.apmui-webtop-resource--caption-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 42px;
+}
+.apmui-webtop-resource--icon {
+  height: 40px;
+  min-width: 40px;
+  margin-right: 14px;
+  position: relative;
+}
+.apmui-webtop-resource--icon .overlay {
+  position: absolute;
+  right: 0px;
+}
+.apmui-webtop-resource--icon img, .apmui-webtop-resource--icon svg {
+  height: 40px;
+  width: 40px;
+}
+.apmui-webtop-resource--caption {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.25;
+  max-height: 40px;
+  overflow: hidden;
+  padding-bottom: 0.8px;
+  text-overflow: ellipsis;
+}
+.apmui-webtop-resource--description {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.25;
+  max-height: 45px;
+  overflow: hidden;
+  padding-bottom: 0.6px;
+  text-overflow: ellipsis;
+}
+.apmui-webtop-resource--restart {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  display: none;
+}
+.apmui-webtop-resource--restart::after {
+  content: url(/public/images/full_wt/restart.png);
+}
+.apmui-webtop-resource--restart:hover, .apmui-webtop-resource--restart:focus {
+  display: block;
+}
+.apmui-webtop-resource--restart:hover::after, .apmui-webtop-resource--restart:focus::after {
+  content: url(/public/images/full_wt/restart_hover.png);
+}
+.apmui-webtop-resource:hover .apmui-webtop-resource--restart, .apmui-webtop-resource:focus .apmui-webtop-resource--restart {
+  display: block;
+}
+.apmui-webtop-resource:focus-within .apmui-webtop-resource--restart {
+  display: block;
+}
+
+/**
+ * Dialogs and modal windows
+ */
+.apmui-modal {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  box-sizing: border-box;
+  max-width: 560px;
+  height: auto;
+  padding: 50px 80px;
+  text-align: left;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 200px;
+  bottom: 0;
+  position: relative;
+  /* enforcing initial focus indication */
+  z-index: 100;
+}
+@media screen and (max-width: 586px) {
+  .apmui-modal {
+    box-shadow: none;
+    max-width: 100%;
+    min-height: 100%;
+    padding: 30px;
+    top: 0;
+  }
+}
+.apmui-modal :focus {
+  box-shadow: 0 0 0 1px #D01523;
+}
+.apmui-modal--overlay {
+  background-color: rgba(218, 218, 218, 0.75);
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 75;
+}
+.apmui-modal--close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1em;
+  width: 1em;
+  min-width: 1em;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Courier";
+  text-align: center;
+  text-decoration: none;
+}
+.apmui-modal--close::after {
+  content: "\00d7";
+}
+.apmui-modal--title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 0.75em;
+  line-height: 1.16;
+}
+.apmui-modal .apmui-webtop-resource--caption-container {
+  margin-bottom: 1em;
+}
+.apmui-modal .input-error-message {
+  display: none;
+}
+
+.apmui-spinner-image {
+  color: #D01523;
+  display: inline-block;
+  animation: apmui-spinner-animation 1.2s linear infinite;
+}
+
+@keyframes apmui-spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.apmui-progress-animation--message {
+  font-weight: bold;
+}
+.apmui-progress-animation .apmui-spinner-image {
+  height: 50px;
+  width: 50px;
+}
+.apmui-progress-animation--spinner {
+  display: inline-block;
+  position: relative;
+}
+
+#apmui-plugin-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.apmui-dialog-text {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.apmui-dialog-action {
+  margin: 27px 0 0;
+  vertical-align: middle;
+}
+.apmui-dialog-action .apmui-button {
+  font-size: 14px;
+  line-height: normal;
+}
+.apmui-dialog-action .apmui-dialog-action--description {
+  vertical-align: middle;
+}
+.apmui-dialog-action.ok_action, .apmui-dialog-action.cancel_action {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.apmui-dialog-action.download_action, .apmui-dialog-action.install_action, .apmui-dialog-action.restart_action, .apmui-dialog-action.skip_action {
+  display: flex;
+}
+.apmui-dialog-action.download_action .apmui-button, .apmui-dialog-action.install_action .apmui-button, .apmui-dialog-action.restart_action .apmui-button, .apmui-dialog-action.skip_action .apmui-button {
+  min-width: 96px;
+  height: 35px;
+}
+.apmui-dialog-action.download_action .apmui-dialog-action--description, .apmui-dialog-action.install_action .apmui-dialog-action--description, .apmui-dialog-action.restart_action .apmui-dialog-action--description, .apmui-dialog-action.skip_action .apmui-dialog-action--description {
+  margin-left: 24px;
+}
+.apmui-dialog-action.expand_action .apmui-button::after {
+  content: "  ▶";
+}
+
+/*
+ * Adjustments for individual dialogs
+ */
+#sepc_popup_blocked .apmui-dialog-action,
+#sepc_install .apmui-dialog-action,
+#sna_install .apmui-dialog-action,
+#sapptun_install .apmui-dialog-action {
+  margin: 0 0 15px;
+}
+#sepc_popup_blocked .apmui-dialog-action.restart_action,
+#sepc_install .apmui-dialog-action.restart_action,
+#sna_install .apmui-dialog-action.restart_action,
+#sapptun_install .apmui-dialog-action.restart_action {
+  display: inline;
+  vertical-align: bottom;
+}
+#sepc_popup_blocked .apmui-dialog-action.restart_action .apmui-button,
+#sepc_install .apmui-dialog-action.restart_action .apmui-button,
+#sna_install .apmui-dialog-action.restart_action .apmui-button,
+#sapptun_install .apmui-dialog-action.restart_action .apmui-button {
+  height: auto;
+  min-width: 0;
+}
+#sepc_popup_blocked .apmui-dialog-action.restart_action .apmui-dialog-action--description,
+#sepc_install .apmui-dialog-action.restart_action .apmui-dialog-action--description,
+#sna_install .apmui-dialog-action.restart_action .apmui-dialog-action--description,
+#sapptun_install .apmui-dialog-action.restart_action .apmui-dialog-action--description {
+  margin-left: 0;
+}
+#sepc_popup_blocked .apmui-dialog-action.skip_action,
+#sepc_install .apmui-dialog-action.skip_action,
+#sna_install .apmui-dialog-action.skip_action,
+#sapptun_install .apmui-dialog-action.skip_action {
+  /*
+   * Skip should be last action in dialogs.
+   * Separate it from others with horizontal line
+   */
+  border-top: 1px solid black;
+  margin-top: 28px;
+  padding-top: 28px;
+}
+#sepc_popup_blocked fieldset.form-input-radio,
+#sepc_install fieldset.form-input-radio,
+#sna_install fieldset.form-input-radio,
+#sapptun_install fieldset.form-input-radio {
+  margin: -20px 0 15px 0;
+}
+
+#sepc_auto_start_not_supported .apmui-dialog-action {
+  margin: 37px 0 49px;
+}
+
+/*
+ * OAuth Authorization request page
+ */
+.apmui-page-oauth-authz--description {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.apmui-page-oauth-authz--error {
+  color: #e51937;
+  font-weight: 600;
+}
+.apmui-page-oauth-authz--scopes p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.apmui-page-oauth-authz--scopes ul {
+  padding-left: 0;
+  list-style-position: inside;
+  margin-top: 0.3em;
+}
+.apmui-page-oauth-authz--warning {
+  color: #e51937;
+  margin-top: 1.5em;
+}
+.apmui-page-oauth-authz .apmui-content .apmui-button {
+  min-width: 108px;
+  height: 35px;
+  margin-right: 0.5em;
+  margin-top: 1em;
+  font-size: 14px;
+  line-height: normal;
+}

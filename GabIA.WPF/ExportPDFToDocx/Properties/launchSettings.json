@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ExportPDFToDocx": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\PJe\\Processos D:\\PJe\\Processos"
+    }
+  }
+}

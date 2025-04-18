@@ -1,0 +1,5 @@
+2023/12/26-11:15:52.770 930c Reusing MANIFEST D:\Usuários\gabinete\GabIA.WPF\bin\Debug\net7.0-windows\GabIA.WPF.exe.WebView2\EBWebView\Default\WebStorage\5\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2023/12/26-11:15:52.771 930c Recovering log #134
+2023/12/26-11:15:52.772 930c Reusing old log D:\Usuários\gabinete\GabIA.WPF\bin\Debug\net7.0-windows\GabIA.WPF.exe.WebView2\EBWebView\Default\WebStorage\5\IndexedDB\indexeddb.leveldb/000134.log 
+2023/12/26-11:15:52.772 930c Delete type=2 #132
+2023/12/26-11:15:52.839 3870 Manual compaction at level-0 from '\x009\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00:\x00\x00\x00' @ 0 : 0; will stop at (end)
