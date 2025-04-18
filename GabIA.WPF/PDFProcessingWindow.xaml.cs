@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
+
 using System.Windows.Media;
 
 namespace GabIA.WPF
@@ -21,8 +21,14 @@ namespace GabIA.WPF
             SelectedFiles = new ObservableCollection<string>();
             lstFiles.ItemsSource = SelectedFiles;
 
-            // Adicionar o conversor de contagem para habilitar/desabilitar o botão Processar
-            Resources.Add("CountToEnabledConverter", new CountToEnabledConverter());
+            // Desabilitar o botão Processar inicialmente
+            btnProcess.IsEnabled = false;
+
+            // Adicionar manipulador de eventos para a coleção
+            SelectedFiles.CollectionChanged += (sender, e) => {
+                // Atualizar o estado do botão com base na contagem de arquivos
+                btnProcess.IsEnabled = SelectedFiles.Count > 0;
+            };
         }
 
         private void BtnSelectFiles_Click(object sender, RoutedEventArgs e)
@@ -98,27 +104,11 @@ namespace GabIA.WPF
             }
             else
             {
-                MessageBox.Show("Por favor, selecione pelo menos um arquivo PDF para processar.", 
+                MessageBox.Show("Por favor, selecione pelo menos um arquivo PDF para processar.",
                     "Nenhum arquivo selecionado", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
     }
 
-    // Conversor para habilitar o botão Processar apenas quando houver arquivos selecionados
-    public class CountToEnabledConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            if (value is int count)
-            {
-                return count > 0;
-            }
-            return false;
-        }
 
-        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-    }
 }

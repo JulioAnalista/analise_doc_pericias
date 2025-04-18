@@ -808,28 +808,37 @@ namespace GabIA.WPF
 
         private void ProcessarPDF_Click(object sender, RoutedEventArgs e)
         {
-            // Abrir a janela de processamento de PDF
-            var pdfProcessingWindow = new PDFProcessingWindow();
-            pdfProcessingWindow.Owner = this; // Define a janela principal como proprietária
-
-            // Mostrar a janela de processamento como diálogo modal
-            bool? result = pdfProcessingWindow.ShowDialog();
-
-            if (result == true)
+            try
             {
-                // Obter os arquivos selecionados
-                var selectedFiles = pdfProcessingWindow.SelectedFiles;
+                // Abrir a janela de processamento de PDF
+                var pdfProcessingWindow = new PDFProcessingWindow();
+                pdfProcessingWindow.Owner = this; // Define a janela principal como proprietária
 
-                if (selectedFiles.Count > 0)
+                // Mostrar a janela de processamento como diálogo modal
+                bool? result = pdfProcessingWindow.ShowDialog();
+
+                if (result == true)
                 {
-                    // Exibir mensagem com os arquivos selecionados (temporário para teste)
-                    MessageBox.Show($"Arquivos selecionados para processamento: {selectedFiles.Count}\n\n" +
-                                  $"{string.Join("\n", selectedFiles)}",
-                                  "Processamento de PDF", MessageBoxButton.OK, MessageBoxImage.Information);
+                    // Obter os arquivos selecionados
+                    var selectedFiles = pdfProcessingWindow.SelectedFiles;
 
-                    // TODO: Implementar o processamento real dos arquivos PDF
-                    // ProcessarArquivosPDF(selectedFiles);
+                    if (selectedFiles.Count > 0)
+                    {
+                        // Exibir mensagem com os arquivos selecionados (temporário para teste)
+                        MessageBox.Show($"Arquivos selecionados para processamento: {selectedFiles.Count}\n\n" +
+                                      $"{string.Join("\n", selectedFiles)}",
+                                      "Processamento de PDF", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                        // TODO: Implementar o processamento real dos arquivos PDF
+                        // ProcessarArquivosPDF(selectedFiles);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                // Capturar e exibir qualquer exceção que ocorra
+                MessageBox.Show($"Ocorreu um erro ao processar PDFs: {ex.Message}\n\nDetalhes: {ex.StackTrace}",
+                              "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
