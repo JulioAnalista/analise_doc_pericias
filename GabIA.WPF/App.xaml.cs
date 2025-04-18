@@ -3,14 +3,15 @@ using GabIA.BLL;
 using GabIA.DAL;
 using GabIA.ENT;
 using Microsoft.Extensions.Configuration;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Windows;
-using System.Diagnostics;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Metadata;
 using DocumentFormat.OpenXml.Presentation;
+using IOPath = System.IO.Path;
 
 namespace GabIA.WPF
 {
@@ -46,6 +47,22 @@ namespace GabIA.WPF
             Application.Current.Properties["ID_PJ"] = 123;
             Application.Current.Properties["PJ"] = "0000000-00.2000.8.07.0008";
 
+            // Inicializar o banco de dados
+            try
+            {
+                var connectionString = configuration.GetConnectionString("DefaultConnection");
+                if (!string.IsNullOrEmpty(connectionString))
+                {
+                    var databaseManager = new DatabaseManager(connectionString);
+                    databaseManager.InitializeDatabase();
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Erro ao inicializar o banco de dados: {ex.Message}");
+                // Não exibimos uma mensagem de erro aqui para não interromper o fluxo de inicialização
+                // O usuário pode configurar o banco de dados posteriormente
+            }
 
             ///////////////////////DataManager.LimparTodasAsTabelas();
 
@@ -92,8 +109,8 @@ namespace GabIA.WPF
         }
         public async void testesOperacionais()
         {
-            string dirModeloDeLinguagem = Path.Combine("d:\\PJe\\Processos\\0704628-29.2022.8.07.0008\\ModeloDeLinguagem");
-            dirModeloDeLinguagem = Path.Combine(dirModeloDeLinguagem, "JsonlOriginal");
+            string dirModeloDeLinguagem = IOPath.Combine("d:\\PJe\\Processos\\0704628-29.2022.8.07.0008\\ModeloDeLinguagem");
+            dirModeloDeLinguagem = IOPath.Combine(dirModeloDeLinguagem, "JsonlOriginal");
             string origem = @"d:\PJe\Processos\0704628-29.2022.8.07.0008\PecasProcessuais\PecasTxt";
 
             //agora vamos atualizar o banco de dados
@@ -107,11 +124,11 @@ namespace GabIA.WPF
 
             // este método resolve o problema das petições de encaminhamento "segue petição anexa"
             ProcessamentoDeTexto limpeza = new ProcessamentoDeTexto();
-            limpeza.MoveConteudoIDCorreto(Path.Combine("d:\\PJe\\Processos", "0704628-29.2022.8.07.0008", "PecasProcessuais", "PecasTxt"));
+            limpeza.MoveConteudoIDCorreto(IOPath.Combine("d:\\PJe\\Processos", "0704628-29.2022.8.07.0008", "PecasProcessuais", "PecasTxt"));
 
             /*
-            string dirModeloDeLinguagem = Path.Combine("d:\\PJe\\Processos\\0704628-29.2022.8.07.0008\\ModeloDeLinguagem");
-            dirModeloDeLinguagem = Path.Combine(dirModeloDeLinguagem, "JsonlOriginal");
+            string dirModeloDeLinguagem = IOPath.Combine("d:\\PJe\\Processos\\0704628-29.2022.8.07.0008\\ModeloDeLinguagem");
+            dirModeloDeLinguagem = IOPath.Combine(dirModeloDeLinguagem, "JsonlOriginal");
             string origem = @"d:\PJe\Processos\0704628-29.2022.8.07.0008\PecasProcessuais\PecasTxt_R";
             PreprocessamentoTextoIA preprocessamento = new PreprocessamentoTextoIA();
             preprocessamento.ProcessFilesInDirectoryToJson(origem, dirModeloDeLinguagem, atosDoProcesso);

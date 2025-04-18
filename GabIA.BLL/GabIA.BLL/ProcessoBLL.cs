@@ -25,8 +25,8 @@ namespace GabIA.BLL
         private PedidoDAL _pedidosDAL;
 
         // Construtor
-        public ProcessoBLL(ProcessoDAL processoDAL, ProcessoJudicialDAL processoJudicialDAL, 
-                AtoProcessualDAL atoProcessualDAL, ElementosDAL elementosDAL, 
+        public ProcessoBLL(ProcessoDAL processoDAL, ProcessoJudicialDAL processoJudicialDAL,
+                AtoProcessualDAL atoProcessualDAL, ElementosDAL elementosDAL,
                 PartesDoProcessoDAL partesdoProcessoDAL, CausaDePedirDAL causasDePedirDAL, PedidoDAL pedidosDAL)
         {
             _processoDAL = processoDAL;

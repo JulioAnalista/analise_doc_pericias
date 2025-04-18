@@ -1,41 +1,52 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GabIA.ENT
 {
-    [Table("Elementos")]
+    /// <summary>
+    /// Representa os elementos de um processo judicial.
+    /// </summary>
     public class ElementosENT
     {
         [Key]
         public int IdElemento { get; set; }
 
-        // Adicionando chave estrangeira para associar Elementos a um ProcessoJudicial
+        /// <summary>
+        /// Identificador do processo judicial ao qual estes elementos est√£o associados.
+        /// </summary>
+        [ForeignKey("ProcessoJudicial")]
         public int IdProcessoJudicial { get; set; }
 
-        // Relacionamento um-para-muitos com PartesdoProcessoENT
-        [InverseProperty("Elementos")]
-        public virtual ICollection<PartesDoProcessoENT> PartesDoProcesso { get; set; }
-
-        // Relacionamento um-para-muitos com CausaDePedirENT
-        [InverseProperty("Elementos")]
-        public virtual ICollection<CausaDePedirENT> CausasDePedir { get; set; }
-
-        // Relacionamento um-para-muitos com PedidoENT
-        [InverseProperty("Elementos")]
-        public virtual ICollection<PedidoENT> Pedidos { get; set; }
-
-        // Adicionando a propriedade de navegaÁ„o para o ProcessoJudicial
-        [ForeignKey("IdProcessoJudicial")]
+        /// <summary>
+        /// Processo judicial ao qual estes elementos est√£o associados.
+        /// </summary>
         public virtual ProcessoJudicialENT ProcessoJudicial { get; set; }
 
+        /// <summary>
+        /// Lista de partes do processo associadas a estes elementos.
+        /// </summary>
+        public virtual ICollection<PartesDoProcessoENT> PartesDoProcesso { get; set; }
+
+        /// <summary>
+        /// Lista de causas de pedir associadas a estes elementos.
+        /// </summary>
+        public virtual ICollection<CausaDePedirENT> CausasDePedir { get; set; }
+
+        /// <summary>
+        /// Lista de pedidos associados a estes elementos.
+        /// </summary>
+        public virtual ICollection<PedidoENT> Pedidos { get; set; }
+
+        /// <summary>
+        /// Construtor padr√£o.
+        /// </summary>
         public ElementosENT()
         {
-            PartesDoProcesso = new HashSet<PartesDoProcessoENT>();
-            CausasDePedir = new HashSet<CausaDePedirENT>();
-            Pedidos = new HashSet<PedidoENT>();
+            PartesDoProcesso = new List<PartesDoProcessoENT>();
+            CausasDePedir = new List<CausaDePedirENT>();
+            Pedidos = new List<PedidoENT>();
         }
     }
 }
-
-

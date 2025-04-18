@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using IOPath = System.IO.Path;
 
 namespace GabIA.WPF
 {
@@ -16,16 +17,16 @@ namespace GabIA.WPF
         public int OcrHighDpi { get; set; } = 600;
         public string PythonPath { get; set; } = @"c:\Python311\python.exe";
         public string ApiKey { get; set; } = "";
-        
+
         // Caminho do arquivo de configuração
-        private static readonly string ConfigFilePath = Path.Combine(
+        private static readonly string ConfigFilePath = IOPath.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
             "GabIA",
             "settings.json");
-            
+
         // Instância singleton
         private static AppSettings _instance;
-        
+
         // Obter a instância singleton
         public static AppSettings Instance
         {
@@ -38,22 +39,22 @@ namespace GabIA.WPF
                 return _instance;
             }
         }
-        
+
         // Construtor privado para o padrão singleton
         private AppSettings() { }
-        
+
         // Carregar configurações do arquivo
         private static AppSettings Load()
         {
             try
             {
                 // Verificar se o diretório existe, se não, criar
-                string configDir = Path.GetDirectoryName(ConfigFilePath);
+                string configDir = IOPath.GetDirectoryName(ConfigFilePath);
                 if (!Directory.Exists(configDir))
                 {
                     Directory.CreateDirectory(configDir);
                 }
-                
+
                 // Verificar se o arquivo existe
                 if (File.Exists(ConfigFilePath))
                 {
@@ -66,22 +67,22 @@ namespace GabIA.WPF
                 // Em caso de erro, registrar e retornar configurações padrão
                 System.Diagnostics.Debug.WriteLine($"Erro ao carregar configurações: {ex.Message}");
             }
-            
+
             // Retornar configurações padrão se não conseguir carregar
             return new AppSettings();
         }
-        
+
         // Salvar configurações no arquivo
         public void Save()
         {
             try
             {
-                string configDir = Path.GetDirectoryName(ConfigFilePath);
+                string configDir = IOPath.GetDirectoryName(ConfigFilePath);
                 if (!Directory.Exists(configDir))
                 {
                     Directory.CreateDirectory(configDir);
                 }
-                
+
                 string json = JsonConvert.SerializeObject(this, Formatting.Indented);
                 File.WriteAllText(ConfigFilePath, json);
             }
