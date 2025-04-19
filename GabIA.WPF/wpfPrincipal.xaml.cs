@@ -829,8 +829,8 @@ namespace GabIA.WPF
                                       $"{string.Join("\n", selectedFiles)}",
                                       "Processamento de PDF", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                        // TODO: Implementar o processamento real dos arquivos PDF
-                        // ProcessarArquivosPDF(selectedFiles);
+                        // Implementar o processamento real dos arquivos PDF
+                        ProcessarArquivosPDF(selectedFiles);
                     }
                 }
             }
@@ -876,6 +876,50 @@ namespace GabIA.WPF
 
             return processos;
         }
+        private void ProcessarArquivosPDF(ObservableCollection<string> arquivosPDF)
+        {
+            try
+            {
+                // Criar uma instância da view NeoGabView
+                var neoGabView = new Views.NeoGabView();
+
+                // Copiar os arquivos selecionados para o diretório de processamento
+                string diretorioDestino = "d:\\PJe\\Baixados";
+
+                // Verificar se o diretório existe, caso contrário, criar
+                if (!Directory.Exists(diretorioDestino))
+                {
+                    Directory.CreateDirectory(diretorioDestino);
+                }
+
+                // Copiar cada arquivo para o diretório de processamento
+                foreach (string arquivoPDF in arquivosPDF)
+                {
+                    string nomeArquivo = IOPath.GetFileName(arquivoPDF);
+                    string caminhoDestino = IOPath.Combine(diretorioDestino, nomeArquivo);
+
+                    // Se já existir um arquivo com o mesmo nome, excluir
+                    if (File.Exists(caminhoDestino))
+                    {
+                        File.Delete(caminhoDestino);
+                    }
+
+                    // Copiar o arquivo
+                    File.Copy(arquivoPDF, caminhoDestino);
+                }
+
+                // Iniciar o processamento dos arquivos
+                neoGabView.separaPecasPDF();
+
+                MessageBox.Show("Processamento concluído com sucesso!", "Processamento de PDF", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao processar arquivos PDF: {ex.Message}\n\nDetalhes: {ex.StackTrace}",
+                              "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
         static ProcessoPolos ExtrairNomesPolo(string campo)
         {
             ProcessoPolos processo = new ProcessoPolos();
