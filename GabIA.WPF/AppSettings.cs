@@ -10,7 +10,7 @@ namespace GabIA.WPF
     {
         // Propriedades de configuração
         public string DefaultDirectory { get; set; } = @"D:\PJe\Processos";
-        public string LanguageModel { get; set; } = "gpt-4";
+        public string LanguageModel { get; set; } = "gpt-4.1-mini";
         public string EmbeddingsModel { get; set; } = "text-embedding-ada-002";
         public string TesseractPath { get; set; } = @"C:\Arquivos de Programas\Tesseract-OCR\tessdata";
         public int OcrLowDpi { get; set; } = 200;

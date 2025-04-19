@@ -57,6 +57,7 @@
 
                         <TextBlock Grid.Row="0" Grid.Column="0" Text="Modelo de Linguagem:" VerticalAlignment="Center" Foreground="{DynamicResource ABrush.Foreground.Static}"/>
                         <ComboBox Grid.Row="0" Grid.Column="1" x:Name="cmbLanguageModel" Margin="5,5,5,5" Background="{DynamicResource ABrush.Tone5.Background.Static}" Foreground="{DynamicResource ABrush.Foreground.Static}" BorderBrush="{DynamicResource ABrush.Tone5.Border.Static}">
+                            <ComboBoxItem Content="gpt-4.1-mini"/>
                             <ComboBoxItem Content="gpt-4"/>
                             <ComboBoxItem Content="gpt-4-turbo"/>
                             <ComboBoxItem Content="gpt-3.5-turbo"/>

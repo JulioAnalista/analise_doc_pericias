@@ -61,13 +61,21 @@ namespace GabIA.WPF
 
         public static async Task<(string, Dictionary<string, string>)> CallApiAzure(string deploymentName, RequestData data, int maxAttempts)
         {
-            string endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
-            string apiKey = Environment.GetEnvironmentVariable("AZURE_OPENAI_KEY");
+            // Usar a API da OpenAI em vez da API do Azure
+            string endpoint = "https://api.openai.com/v1/chat/completions";
+            string apiKey = AppSettings.Instance.ApiKey;
 
-            endpoint = "https://alx.openai.azure.com/";
-            apiKey = "105af24142b940ab842b9759bc67ffcf";
+            // Se a chave da API não estiver definida nas configurações, tentar carregar de variáveis de ambiente
+            if (string.IsNullOrEmpty(apiKey))
+            {
+                apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY");
+            }
 
-            var client = CreateOpenAIClient(endpoint, apiKey);
+            // Obter o modelo de linguagem das configurações
+            string languageModel = AppSettings.Instance.LanguageModel;
+
+            // Criar um cliente HTTP para a API da OpenAI
+            var httpClient = new HttpClient();
 
             for (int attempt = 1; attempt <= maxAttempts; attempt++)
             {
@@ -81,22 +89,31 @@ namespace GabIA.WPF
                 //Debug.WriteLine(linhasConcatenadas);
                 try
                 {
-                    var chatCompletionsOptions = new ChatCompletionsOptions
+                    // Configurar o cabeçalho da requisição
+                    httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", apiKey);
+
+                    // Criar o objeto de requisição para a API da OpenAI
+                    var requestJson = new
                     {
-                        DeploymentName = deploymentName,
-                        Messages =
+                        model = languageModel, // Usar o modelo definido nas configurações
+                        messages = new List<Dictionary<string, string>>
                         {
-                            new ChatRequestSystemMessage(data.SystemContent),
-                            //new ChatRequestUserMessage(string.Join(" ", data.JsonData.Linhas.Select(l => l.linha)))
-                            new ChatRequestUserMessage(linhasConcatenadas.ToString())
+                            new Dictionary<string, string> { { "role", "system" }, { "content", data.SystemContent } },
+                            new Dictionary<string, string> { { "role", "user" }, { "content", linhasConcatenadas.ToString() } }
                         },
-                        MaxTokens = 8000
+                        max_tokens = 8000
                     };
 
-                    var response = await client.GetChatCompletionsAsync(chatCompletionsOptions);
-                    string jsonResponse = JsonConvert.SerializeObject(response.Value);
+                    // Serializar a requisição para JSON
+                    var requestJsonString = JsonConvert.SerializeObject(requestJson);
 
-                    if (jsonResponse.Contains("error"))
+                    // Enviar a requisição para a API da OpenAI
+                    using var content = new StringContent(requestJsonString, Encoding.UTF8, "application/json");
+                    var response = await httpClient.PostAsync(endpoint, content);
+                    var jsonResponse = await response.Content.ReadAsStringAsync();
+
+                    // Verificar se a resposta contém um erro
+                    if (!response.IsSuccessStatusCode || jsonResponse.Contains("error"))
                     {
                         throw new Exception($"Request failed with error: {jsonResponse}");
                     }
@@ -172,11 +189,11 @@ namespace GabIA.WPF
         {
             var files = Directory.EnumerateFiles(inputDirectory);
             List<Task> tasks = new List<Task>();
-            string apiKey = LoadApiKey(apiKeyFilePath); // Implemente LoadApiKey conforme necessário
-            string endpoint = "https://api.openai.com/v1/chat/completions"; // Substitua pelo endpoint correto, se necessário
+            string apiKey = LoadApiKey(apiKeyFilePath); // Carrega a chave da API do arquivo
+            string endpoint = "https://api.openai.com/v1/chat/completions"; // Endpoint da OpenAI
 
-            endpoint = "https://alx.openai.azure.com/";
-            apiKey = "105af24142b940ab842b9759bc67ffcf";
+            // Obter o modelo de linguagem das configurações
+            string languageModel = AppSettings.Instance.LanguageModel;
 
             foreach (var file in files)
             {
@@ -241,8 +258,8 @@ namespace GabIA.WPF
                         Metadata = metadata
                     };
 
-                    // Ajuste para corresponder à assinatura do método CallApiAzure
-                    var result = await CallApiAzure("alx_turbo16", requestData, 3);
+                    // Usar o modelo de linguagem das configurações em vez de um modelo fixo do Azure
+                    var result = await CallApiAzure(languageModel, requestData, 3);
                     string jsonResponse = result.Item1;
                     Dictionary<string, string> responseMetadata = result.Item2;
 
@@ -434,17 +451,27 @@ namespace GabIA.WPF
         }
         private static string IdentificarModelo(string conteudo)
         {
-            // Obtendo o tamanho da string em bytes
+            // Verificar primeiro se há um modelo definido nas configurações
+            string modeloConfigurado = AppSettings.Instance.LanguageModel;
+            if (!string.IsNullOrEmpty(modeloConfigurado))
+            {
+                return modeloConfigurado; // Usar o modelo definido nas configurações
+            }
+
+            // Se não houver modelo configurado, selecionar com base no tamanho do conteúdo
             long tamanhoDoConteudo = System.Text.Encoding.UTF8.GetByteCount(conteudo);
 
-            // Retornando o modelo baseado no tamanho do conteudo
-            if (tamanhoDoConteudo < 16000)
+            if (tamanhoDoConteudo < 8000)
             {
-                return "gpt-3.5-turbo-1106";
+                return "gpt-4.1-mini"; // Novo modelo para conteúdos pequenos
+            }
+            else if (tamanhoDoConteudo < 16000)
+            {
+                return "gpt-3.5-turbo";
             }
             else
             {
-                return "gpt-4-1106-preview";
+                return "gpt-4-turbo";
             }
         }
     }
