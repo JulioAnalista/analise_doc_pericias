@@ -1,16 +1,17 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Launch GabIA.WPF",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/GabIA.WPF/bin/Debug/net7.0-windows/GabIA.WPF.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/GabIA.WPF",
-            "stopAtEntry": false,
-            "console": "internalConsole"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Launch GabIA.WPF",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/GabIA.WPF/bin/Debug/net8.0-windows/GabIA.WPF.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/GabIA.WPF",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
 }
